@@ -12,13 +12,8 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        'p_red': '#FE004E',
-        'p_back': '#212529',
-        'p_grey': '#899FBC',
-        'p_dullgrey': '#A3ABB3',
-        'white': '#FFFFFF',
-        'p_bggrey': '#525252',
-        
+        'shipy': '#D4AE83',
+        'shipblue': '#061138',
       },
     },
   },

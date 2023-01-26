@@ -1,29 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Button from "./Button";
 import { useRouter } from "next/router";
+import Logo from "../../../public/assets/images/sticky-logo.png";
 
 const Navbar = () => {
   const router = useRouter();
   return (
-    <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 bg-p_back">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <nav class=" border-gray-200 sm:px-4 py-2.5 bg-white">
+      <div class="container flex flex-wrap items-center justify-around pt-5">
         <Link href="/" class="flex items-center">
-          {/* <Image
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-6 mr-3 sm:h-9"
+          <Image
+            src={Logo}
+            class="w-[15rem] h-[5rem] mr-3"
             alt="Flowbite Logo"
-            fit
-          /> */}
-          <span class="self-center font-black text-3xl text-p_grey whitespace-nowrap hover:text-white ease-in-out duration-200">
-            PennyFlo
-          </span>
+          />
         </Link>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:text-shipy focus:outline-none focus:ring-2 focus:ring-gray-200  "
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -47,26 +43,35 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-p_dullgrey  rounded hover:text-white md:border-0 md:p-0 text-lg"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
                 aria-current="page"
               >
-                About
+                HOME
               </Link>
             </li>
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-p_dullgrey  rounded hover:text-white md:border-0 md:p-0 text-lg"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
+                aria-current="page"
               >
-                Features
+                ABOUT US 
               </Link>
             </li>
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-p_dullgrey  rounded hover:text-white md:border-0 md:p-0 text-lg"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
               >
-                Pricing
+                SERVICES
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
+              >
+                DESIGNS
               </Link>
             </li>
             
@@ -74,23 +79,18 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-p_dullgrey  rounded hover:text-white md:border-0 md:p-0 text-lg"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
               >
-                Contact
+                CONTACT
               </Link>
             </li>
-            {router.pathname === "/signin" && (
-              <li>
-                <Link
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-white md:border-0 md:p-0 text-lg"
-                >
-                  Sign in
-                </Link>
-              </li>
-            )}
             <li>
-              <Button />
+            <Link
+                href="#"
+                class="text-white bg-shipblue  hover:bg-shipy text-base py-3 px-7"
+              >
+                ENQUIRY
+              </Link>
             </li>
           </ul>
         </div>
