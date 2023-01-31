@@ -7,7 +7,7 @@ import Logo from "../../../public/assets/images/sticky-logo.png";
 const Navbar = () => {
   const router = useRouter();
   return (
-    <nav class="border-gray-200 w-full sm:px-4 py-2.5 bg-white">
+    <nav class="border-gray-200 w-full sm:px-4 py-2.5 bg-white mb-7">
       <div class="container flex flex-wrap items-center justify-around pt-5">
         <Link href="/" class="flex items-center">
           <Image
