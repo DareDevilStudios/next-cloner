@@ -8,7 +8,7 @@ const Designs = () => {
     <div>
       <Navbar />
       <Mtop />
-      <Banner />
+      <Banner title="DESIGNS" />
     </div>
   );
 };
