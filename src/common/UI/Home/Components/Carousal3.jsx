@@ -28,7 +28,7 @@ const Carousal3 = () => {
   return (
     <div className="w-full h-[1140px]">
       <Carousel leftControl="" rightControl="">
-        <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat h-full items-center justify-center bg-gray-400  text-white">
+        <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mover mr-auto place-self-center lg:col-span-7 pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none md:text-xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
@@ -46,7 +46,7 @@ const Carousal3 = () => {
             </a>
           </div>
         </div>
-        <div className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat h-full items-center justify-center bg-gray-400  text-white">
+        <div className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mr-auto place-self-center lg:col-span-7 pl-[12rem]">
             <h1 class=" mb-5 text-4xl font-bold tracking-tight leading-none md:text-xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
@@ -63,7 +63,7 @@ const Carousal3 = () => {
             </a>
           </div>
         </div>
-        <div className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat h-full items-center justify-center bg-gray-400  text-white">
+        <div className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mr-auto place-self-center lg:col-span-7 pl-[12rem]">
             <h1 class=" mb-5 text-4xl font-bold tracking-tight leading-none md:text-xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
