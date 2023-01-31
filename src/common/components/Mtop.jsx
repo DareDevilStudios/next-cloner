@@ -5,19 +5,14 @@ import { useRouter } from "next/router";
 import Logo from "../../../public/assets/images/sticky-logo.png";
 
 const Navbar = () => {
-  const opener = () => {
-    const navbar = document.getElementById("navbar-default");
-    navbar.classList.toggle("hidden");
-  };
-
   const router = useRouter();
   return (
-    <nav class="border-gray-200 w-full sm:px-4 py-8 bg-white fixed top-0 z-[99]">
-      <div class="flex flex-wrap items-center justify-around pt-5 w-full">
+    <nav class="border-gray-200 w-full sm:px-4 py-2.5 bg-white">
+      <div class="container flex flex-wrap items-center justify-around pt-5">
         <Link href="/" class="flex items-center">
           <Image
             src={Logo}
-            class="w-[20rem] h-[6.6rem] mr-3"
+            class="w-[15rem] h-[5rem] mr-3"
             alt="Flowbite Logo"
           />
         </Link>
@@ -27,7 +22,6 @@ const Navbar = () => {
           class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:text-shipy focus:outline-none focus:ring-2 focus:ring-gray-200  "
           aria-controls="navbar-default"
           aria-expanded="false"
-          onClick={opener}
         >
           <span class="sr-only">Open main menu</span>
           <svg
@@ -49,7 +43,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
                 aria-current="page"
               >
                 HOME
@@ -58,16 +52,16 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
                 aria-current="page"
               >
-                ABOUT US
+                ABOUT US 
               </Link>
             </li>
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
               >
                 SERVICES
               </Link>
@@ -75,24 +69,25 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
               >
                 DESIGNS
               </Link>
             </li>
+            
 
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-base"
               >
                 CONTACT
               </Link>
             </li>
-            <li className="mt-4 md:mt-0 ">
-              <Link
+            <li>
+            <Link
                 href="#"
-                class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-lg font-bold py-3 px-7"
+                class="text-white bg-shipblue  hover:bg-shipy text-base py-3 px-7"
               >
                 ENQUIRY
               </Link>
