@@ -9,18 +9,18 @@ import F5 from "../../../../../public/assets/images/resource/featured-image-27.j
 const Projects = () => {
   return (
     <div className="w-100 my-14 flex-col md:flex md:flex-row justify-center items-center">
-      <div className="w-100 flex justify-center items-center md:w-1/2">
-        <div class="max-w-lg md:max-w-xl self-baseline  bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-100 flex justify-center items-center">
+        <div class="w-4/6 h-[45rem] self-baseline  bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <Image src={F1} alt="" />
+            <Image className="w-full h-1/2" src={F1} alt="" />
           </a>
           <div class="py-5 px-8">
             <a href="#">
-              <h5 class="my-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-                OUR PROJECTS
+              <h5 class="my-4 text-4xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
+                <span className="font-medium">OUR</span> PROJECTS
               </h5>
             </a>
-            <p class="mb-3 text-base font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-md leading-9 tracking-widest font-normal text-gray-700 dark:text-gray-400">
               With our hardship, effort and the reliability that we offered to
               our customers, we built a numerous number of floating palaces
               around the globe.
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="w-100 mt-20 md:mt-0 md:w-1/2 flex justify-center items-center">
+      <div className="w-100 mt-20 md:mt-0 flex justify-center items-center">
         <div className="grid gap-7 w-5/6 md:grid-cols-2 justify-center items-center">
           <div className="bg-black group mb-16 relative flex flex-col justify-center items-center">
             <Image className="group-hover:opacity-30" src={F2} alt="" />

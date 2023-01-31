@@ -8,14 +8,14 @@ const AboutUsHome = () => {
     <div>
       <section class="bg-white w-full">
         <div class="flex items-center justify-center w-full py-8 gap-9 lg:py-16">
-          <div class="w-1/2">
-            <h3 className="font-semibold text-3xl text-gray-400 mb-4">
+          <div class="w-1/2 p-20">
+            <h3 className="font-semibold text-2xl text-gray-400 mb-4">
               About Us
             </h3>
-            <h1 class="font-body w-5/6 mb-5 text-3xl font-semibold tracking-tight leading-none md:text-3xl xl:text-5xl text-blue-700">
+            <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
               We Take Pride in Serving Our Customers Safely.
             </h1>
-            <p class="text-justify mb-6 font-light lg:mb-8 md:text-lg lg:text-2xl ">
+            <p class="text-justify mb-6 font-light lg:mb-8 ">
               Innovation with strong engineering background being the founding
               stone of ShipTech-ICON,
               <span className="font-bold">
@@ -33,10 +33,10 @@ const AboutUsHome = () => {
               management, basic design, production design & support.
             </p>
             <div class="">
-              <h3 className="font-display tracking-wide font-normal text-2xl text-black mb-7">
+              <h3 className="font-display tracking-wide font-normal text-xl text-black mb-7">
                 We Provide Best Quality Services
               </h3>
-              <div className="grid gap-4 text-gray-500 text-xl tracking-wider">
+              <div className="grid gap-4 text-gray-500 text-md tracking-wider">
                 <div className="grid grid-cols-2  ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />

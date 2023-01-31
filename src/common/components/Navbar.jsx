@@ -13,11 +13,11 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <nav class="border-gray-200 w-full sm:px-4 py-8 bg-white fixed top-0 z-[99]">
-      <div class="flex flex-wrap items-center justify-around pt-5 w-full">
+      <div class="flex flex-wrap items-center justify-around w-full">
         <Link href="/" class="flex items-center">
           <Image
             src={Logo}
-            class="w-[20rem] h-[6.6rem] mr-3"
+            class="w-[15rem] h-[5rem] mr-3"
             alt="Flowbite Logo"
           />
         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
                 aria-current="page"
               >
                 HOME
@@ -58,7 +58,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
                 aria-current="page"
               >
                 ABOUT US
@@ -67,7 +67,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 SERVICES
               </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 DESIGNS
               </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-lg font-bold"
+                class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 CONTACT
               </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
             <li className="mt-4 md:mt-0 ">
               <Link
                 href="#"
-                class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-lg font-bold py-3 px-7"
+                class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
               >
                 ENQUIRY
               </Link>

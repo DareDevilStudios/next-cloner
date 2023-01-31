@@ -52,59 +52,60 @@ const Clients = () => {
 
   const client2 = [
     {
-        url: "/assets/images/clients/16.png",
-      },
-      {
-        url: "/assets/images/clients/17.png",
-      },
-      {
-        url: "/assets/images/clients/18.png",
-      },
-      {
-        url: "/assets/images/clients/19.png",
-      },
-      {
-        url: "/assets/images/clients/20.png",
-      },
-      {
-        url: "/assets/images/clients/21.png",
-      },
-      {
-        url: "/assets/images/clients/22.png",
-      },
-      {
-        url: "/assets/images/clients/23.png",
-      },
-      {
-        url: "/assets/images/clients/24.png",
-      },
-      {
-        url: "/assets/images/clients/25.png",
-      },
-      {
-        url: "/assets/images/clients/26.png",
-      },
-      {
-        url: "/assets/images/clients/27.png",
-      },
-      {
-        url: "/assets/images/clients/28.png",
-      },
-      {
-        url: "/assets/images/clients/29.png",
-      },
-      {
-        url: "/assets/images/clients/30.png",
-      },
-    ];
+      url: "/assets/images/clients/16.png",
+    },
+    {
+      url: "/assets/images/clients/17.png",
+    },
+    {
+      url: "/assets/images/clients/18.png",
+    },
+    {
+      url: "/assets/images/clients/19.png",
+    },
+    {
+      url: "/assets/images/clients/20.png",
+    },
+    {
+      url: "/assets/images/clients/21.png",
+    },
+    {
+      url: "/assets/images/clients/22.png",
+    },
+    {
+      url: "/assets/images/clients/23.png",
+    },
+    {
+      url: "/assets/images/clients/24.png",
+    },
+    {
+      url: "/assets/images/clients/25.png",
+    },
+    {
+      url: "/assets/images/clients/26.png",
+    },
+    {
+      url: "/assets/images/clients/27.png",
+    },
+    {
+      url: "/assets/images/clients/28.png",
+    },
+    {
+      url: "/assets/images/clients/29.png",
+    },
+    {
+      url: "/assets/images/clients/30.png",
+    },
+  ];
 
   return (
-    <div className="flex flex-col justify-center items-center py-7">
-      <div className="w-full flex justify-center items-center py-7">
-        <span className="text-4xl font-normal mr-4">OUR</span>
-        <h1 className="text-4xl text-center font-bold text-black">CLIENTS</h1>
-      </div>
-      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none">
+    <div className="flex flex-col justify-center items-center my-20">
+      <a href="#">
+        <h5 class="my-10 text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
+          <span className="font-medium">OUR</span> CLIENTS
+        </h5>
+      </a>
+      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
         {client1.concat(client1).map((item, index) => {
           return (
             <Image
@@ -117,7 +118,7 @@ const Clients = () => {
           );
         })}
       </div>
-      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none">
+      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
         {client2.concat(client2).map((item, index) => {
           return (
             <Image
