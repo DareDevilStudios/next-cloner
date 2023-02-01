@@ -1,6 +1,9 @@
 {
   "name": "penny-flow-app",
   "version": "0.1.0",
+  "description": "Penny Flow App",
+  "author": "Penny Flow",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",

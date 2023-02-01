@@ -29,11 +29,11 @@ const Carousal3 = () => {
     <div className="w-full h-[1140px]">
       <Carousel leftControl="" rightControl="">
         <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mover mr-auto place-self-center lg:col-span-7 pl-[12rem]">
-            <h1 class=" mb-5 font-bold tracking-wide leading-none md:text-xl text-white ease-in duration-700">
+          <div class="mover mr-auto place-self-center pl-20 md:pl-[12rem]">
+            <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>
-            <h1 class=" mb-4 font-body font-extrabold tracking-wider leading-none md:text-7xl text-white ease-in duration-700">
+            <h1 class=" mb-4 font-body font-extrabold tracking-wider leading-none text-4xl md:text-5xl lg:text-7xl text-white ease-in duration-700">
               Innovative <br /> Solutions
             </h1>
 
@@ -47,11 +47,11 @@ const Carousal3 = () => {
           </div>
         </div>
         <div className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mr-auto place-self-center lg:col-span-7 pl-[12rem]">
-            <h1 class=" mb-5 text-4xl font-bold tracking-tight leading-none md:text-xl text-white ease-in duration-700">
+          <div class="mr-auto place-self-center pl-20 md:pl-[12rem]">
+            <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>
-            <h1 class=" font-body  mb-4 text-4xl font-extrabold tracking-wider leading-none md:text-7xl text-white ease-in duration-700">
+            <h1 class=" font-body  mb-4  font-extrabold tracking-wider leading-none text-4xl md:text-5xl lg:text-7xl text-white ease-in duration-700">
               Innovative <br /> Solutions
             </h1>
 
@@ -64,11 +64,11 @@ const Carousal3 = () => {
           </div>
         </div>
         <div className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mr-auto place-self-center lg:col-span-7 pl-[12rem]">
-            <h1 class=" mb-5 text-4xl font-bold tracking-tight leading-none md:text-xl text-white ease-in duration-700">
+          <div class="mr-auto place-self-center pl-20 md:pl-[12rem]">
+            <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>
-            <h1 class=" mb-4 font-body text-4xl font-extrabold tracking-wider leading-none md:text-7xl text-white ease-in duration-700">
+            <h1 class=" mb-4 font-body  font-extrabold tracking-wider leading-none text-4xl md:text-5xl lg:text-7xl text-white ease-in duration-700">
               Innovative <br /> Solutions
             </h1>
 

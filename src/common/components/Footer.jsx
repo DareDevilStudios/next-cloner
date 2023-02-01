@@ -34,11 +34,11 @@ const Footer = () => {
 
   return (
     <div className="w-full bg-shipblue text-white">
-      <div className="top h-[40rem] flex justify-center gap-[7rem] py-5">
-        <div className="part1 w-2/6 flex flex-col justify-center h-full">
+      <div className="top h-full md:h-[40rem] flex flex-col md:flex-row justify-around gap-3 lg:gap[5rem] xl:gap-[7rem] py-5">
+        <div className="part1 w-full md:w-2/6 flex flex-col justify-center items-center md:items-start h-full">
           <Image className="w-56 my-4" src={Logo} alt="logo" />
-          <div className="details my-4 text-md">
-            <div className="flex gap-3 my-6">
+          <div className="details my-4 text-md flex flex-col justify-center items-center md:items-start">
+            <div className="flex md:justify-center items-center md:items-start gap-3 my-6">
               <svg
                 className="w-8 h-8 text-shipy"
                 fill="currentColor"
@@ -52,7 +52,7 @@ const Footer = () => {
                   d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
                 ></path>
               </svg>
-              <p className="">
+              <p className="w-5/6">
                 Center for Innovation Technology Transfer & Industrial
                 Collaboration, CITTIC, CUSAT, Kochi, Kerala 682022
               </p>
@@ -96,11 +96,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="part2 flex flex-col justify-center h-full text-xl">
-          <h1 className="underline underline-offset-[.7rem] mt-4 mb-7 text-2xl font-body">
+        <div className="part2 flex flex-col justify-center items-center h-full text-xl">
+          <h1 className="underline underline-offset-[.7rem] mt-4 mb-7 md:xl lg:text-2xl font-body">
             Who We Are
           </h1>
-          <div className="links mt-5 flex flex-col gap-3 text-gray-400">
+          <div className="links mt-5 grid grid-cols-2 md:flex md:flex-col gap-3 text-gray-400">
             <div className="link flex ">
               <svg
                 className="w-6 h-6 text-shipy"
@@ -183,11 +183,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="part3 flex flex-col justify-center h-full text-lg">
-          <h1 className="underline underline-offset-[.7rem] mt-4 mb-7 text-2xl self-start font-body">
+        <div className="part3 my-6 md:my-0 flex flex-col justify-center items-center h-full text-lg">
+          <h1 className="underline block underline-offset-[.7rem] mt-4 mb-7 text-2xl md:self-start font-body text-center md:text-left">
             Our Gallery
           </h1>
-          <div className="gallery grid grid-cols-4 gap-3">
+          <div className="gallery grid grid-cols-3 xl:grid-cols-4 justify-center items-center gap-6 md:gap-3">
             {gallery.map((item, index) => (
               <Image src={item.url} alt="gallery1" width={100} height={100} />
             ))}{" "}

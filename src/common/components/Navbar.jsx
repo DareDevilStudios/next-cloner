@@ -44,7 +44,7 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div class="hidden w-full md:block md:w-auto duration-500" id="navbar-default">
           <ul class="flex flex-col items-center justify-between p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
             <li>
               <Link
