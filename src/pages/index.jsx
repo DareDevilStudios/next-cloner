@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import HomePage from '../common/UI/Home/Home.jsx'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import HomePage from "../common/UI/Home/Home.jsx";
 
 export default function Home() {
   return (
@@ -13,12 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="anime.min.js"></script>
+        
       </Head>
 
       <main className="">
-        <HomePage/>
+        <HomePage />
       </main>
-      
     </div>
-  )
+  );
 }
