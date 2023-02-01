@@ -48,7 +48,7 @@ const Navbar = () => {
           <ul class="flex flex-col items-center justify-between p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
             <li>
               <Link
-                href="#"
+                href="/"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
                 aria-current="page"
               >
@@ -57,7 +57,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/about"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
                 aria-current="page"
               >
@@ -66,7 +66,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/services"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 SERVICES
@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <li>
               <Link
-                href="#"
+                href="/contact"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 CONTACT
