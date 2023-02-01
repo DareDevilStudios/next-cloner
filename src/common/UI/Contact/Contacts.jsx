@@ -3,6 +3,7 @@ import Navbar from "../../Components/Navbar.jsx";
 import Mtop from "../../Components/Mtop.jsx";
 import Banner from "../../Components/Banner.jsx";
 import Contact from "./Components/Contact.jsx";
+import Footer from "../../components/Footer.jsx";
 import Form from "./Components/Form.jsx";
 import map from "../../../../public/assets/images/contact_icons/google_map.png";
 import phone from "../../../../public/assets/images/contact_icons/phone.png";
@@ -46,6 +47,7 @@ const Contacts = () => {
       />
       </div>
       <Form/>
+      <Footer />
     </div>
   );
 };

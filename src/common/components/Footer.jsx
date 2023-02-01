@@ -88,10 +88,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex gap-5">
-            <div className="w-12 h-12 bg-black bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
+            <div className="w-12 h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
               <Image className="w-9 text-white" src={fb} alt="fb" />
             </div>
-            <div className="w-12 h-12 bg-black bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
+            <div className="w-12 h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
               <Image className="w-9 text-white" src={linkedin} alt="fb" />
             </div>
           </div>
