@@ -13,7 +13,7 @@ import Mtop from "../../components/Mtop.jsx";
 
 const Home = () => {
   return (
-    <div className="relative w-screen">
+    <div className="relative w-full">
       <Navbar />
       <Mtop/>
       {/* <Carousal/> */}

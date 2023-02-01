@@ -26,7 +26,7 @@ const Carousal3 = () => {
   //   });
 
   return (
-    <div className="w-full h-[1140px]">
+    <div className="w-full h-[750px]  lg:h-[1440px]">
       <Carousel leftControl="" rightControl="">
         <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mover mr-auto place-self-center pl-20 md:pl-[12rem]">

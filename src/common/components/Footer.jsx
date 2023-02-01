@@ -37,8 +37,8 @@ const Footer = () => {
       <div className="top h-full md:h-[40rem] flex flex-col md:flex-row justify-around gap-3 lg:gap[5rem] xl:gap-[7rem] py-5">
         <div className="part1 w-full md:w-2/6 flex flex-col justify-center items-center md:items-start h-full">
           <Image className="w-56 my-4" src={Logo} alt="logo" />
-          <div className="details my-4 text-md flex flex-col justify-center items-center md:items-start">
-            <div className="flex md:justify-center items-center md:items-start gap-3 my-6">
+          <div className="details my-4 ml-7 text-md flex flex-col justify-center items-center md:items-start">
+            <div className="flex items-center md:items-start gap-3 my-6">
               <svg
                 className="w-8 h-8 text-shipy"
                 fill="currentColor"
@@ -57,7 +57,7 @@ const Footer = () => {
                 Collaboration, CITTIC, CUSAT, Kochi, Kerala 682022
               </p>
             </div>
-            <div className="flex gap-3 my-6">
+            <div className="details my-4 text-md flex gap-4 justify-center items-center md:items-start">
               <svg
                 className="w-6 h-6 text-shipy"
                 fill="currentColor"
@@ -87,7 +87,7 @@ const Footer = () => {
               <p className="">info@shiptech-icon.com</p>
             </div>
           </div>
-          <div className="flex gap-5">
+          <div className="flex gap-5 ml-7">
             <div className="w-12 h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
               <Image className="w-9 text-white" src={fb} alt="fb" />
             </div>
