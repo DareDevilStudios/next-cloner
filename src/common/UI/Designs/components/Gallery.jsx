@@ -121,12 +121,14 @@ const Gallery = () => {
   ];
 
   const modelOpen = (index) => {
+    setValue(index);
     const drawer = document.getElementById(`${index}`);
     const overlay = document.getElementById("overlay");
     const container = document.getElementById("container");
-    setValue(index);
     drawer.classList.remove("hidden");
     overlay.classList.remove("hidden");
+    container.classList.add("overflow-hidden");
+    mylinkfunction();
   };
 
   const modelClose = () => {
@@ -135,7 +137,12 @@ const Gallery = () => {
     const container = document.getElementById("container");
     drawer.classList.add("hidden");
     overlay.classList.add("hidden");
+    container.classList.remove("overflow-hidden");
   };
+
+  const mylinkfunction = () => {
+    window.location.href="#container";
+  }
 
   return (
     <div
@@ -167,13 +174,12 @@ const Gallery = () => {
 
             {/* modal */}
             <div
-              // id="defaultModal"
               id={`${index}`}
               tabindex="-1"
               aria-hidden="true"
-              class="absolute bottom-[30%] left-0 md:left-[30%] z-[100] hidden w-full p-4 "
+              class="absolute top-0 left-0 sm:left-[8%] md:left-[17%] xl:left-[25%] z-[100] hidden w-full  md:p-4 "
             >
-              <div class="relative w-full h-full max-w-2xl md:h-auto font-body">
+              <div id="modal_reach" class="relative w-full h-full max-w-2xl md:h-auto font-body">
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 px-7 py-4">
                   <div class="flex  items-start justify-between p-4 rounded-t">
                     <h3 class="text-2xl py-4 tracking-wider font-semibold text-shipy">
@@ -209,83 +215,113 @@ const Gallery = () => {
                     <p className="text-xl text-black my-5">{item.desc}</p>
                   </div>
                   <hr />
-                  <div className="">
-                    <Table>
-                      <Table.Head>
-                        <Table.HeadCell>Specification</Table.HeadCell>
-                        <Table.HeadCell>Value</Table.HeadCell>
-                      </Table.Head>
-                      <Table.Body className="divide-y">
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                  <div class="relative overflow-x-auto">
+                    <table class="w-full text-xs md:text-lg text-left text-gray-500 dark:text-gray-400">
+                      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                          <th scope="col" class="px-3 md:px-6 py-3">
+                          Specification
+                          </th>
+                          <th scope="col" class="px-3 md:px-6 py-3">
+                            Value
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             Length
-                          </Table.Cell>
-                          <Table.Cell>{item.length}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                            Width
-                          </Table.Cell>
-                          <Table.Cell>{item.width}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                            Depth
-                          </Table.Cell>
-                          <Table.Cell>{item.depth}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                            Approx Draft
-                          </Table.Cell>
-                          <Table.Cell>{item.approx_draft}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.length}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            width
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.width}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            depth
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.depth}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            approximate draft
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.approx_draft}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             station spacing
-                          </Table.Cell>
-                          <Table.Cell>{item.station_spacing}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.station_spacing}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             passenger capacity
-                          </Table.Cell>
-                          <Table.Cell>{item.passenger_capacity}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                            Engine
-                          </Table.Cell>
-                          <Table.Cell>{item.engine}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.passenger_capacity}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
+                            engine
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.engine}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             material
-                          </Table.Cell>
-                          <Table.Cell>{item.material}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                            speed
-                          </Table.Cell>
-                          <Table.Cell>{item.speed}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.material}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             displacement <br />
                             Lightship
-                          </Table.Cell>
-                          <Table.Cell>{item.displacement1}</Table.Cell>
-                        </Table.Row>
-                        <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                          <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.displacement1}</td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                          <th
+                            scope="row"
+                            class="px-3 md:px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                          >
                             displacement <br />
                             Fully Laoded
-                          </Table.Cell>
-                          <Table.Cell>{item.displacement2}</Table.Cell>
-                        </Table.Row>
-                      </Table.Body>
-                    </Table>
+                          </th>
+                          <td class="px-3 md:px-6 py-4">{item.displacement2}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -296,7 +332,7 @@ const Gallery = () => {
       {/* overlay */}
       <div
         id="overlay"
-        class="fixed hidden inset-0 bg-black z-[99] bg-opacity-80 transition-opacity"
+        class="fixed hidden inset-0 bg-black z-[99] bg-opacity-80 transition-opacity h-screen w-screen overflow-hidden"
         aria-hidden="true"
       ></div>
     </div>

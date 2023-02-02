@@ -9,7 +9,7 @@ import Product from "../../../../../public/assets/images/resource/service/produc
 
 const Gallery = () => {
   return (
-    <div className="grid md:grid-cols-3 gap-7 w-full p-5 md:p-20">
+    <div className="grid md:grid-cols-3 items-center md:items-start md:justify-start justify-center gap-7 w-full p-5 md:p-20">
       <Card
         img={Naval}
         title="Naval Architectural Services"

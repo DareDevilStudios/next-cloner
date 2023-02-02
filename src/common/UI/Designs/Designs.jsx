@@ -12,7 +12,7 @@ const Designs = () => {
       <Mtop />
       <Banner title="OUR DESIGNS" />
       <Gallery/>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
