@@ -37,8 +37,8 @@ const Footer = () => {
       <div className="top h-full md:h-[40rem] flex flex-col md:flex-row justify-around gap-3 lg:gap[5rem] xl:gap-[7rem] py-5">
         <div className="part1 w-full md:w-2/6 flex flex-col justify-center items-center md:items-start h-full">
           <Image className="w-56 my-4" src={Logo} alt="logo" />
-          <div className="details my-4 ml-7 text-md flex flex-col justify-center items-center md:items-start">
-            <div className="flex items-center md:items-start gap-3 my-6">
+          <div className="details my-4 mx-5 sm:ml-7 text-md flex flex-col md:items-start">
+            <div className="flex  md:items-start gap-3 my-6">
               <svg
                 className="w-8 h-8 text-shipy"
                 fill="currentColor"
@@ -57,7 +57,7 @@ const Footer = () => {
                 Collaboration, CITTIC, CUSAT, Kochi, Kerala 682022
               </p>
             </div>
-            <div className="details my-4 text-md flex gap-4 justify-center items-center md:items-start">
+            <div className="details my-4 text-md flex gap-4 md:items-start">
               <svg
                 className="w-6 h-6 text-shipy"
                 fill="currentColor"
@@ -87,11 +87,11 @@ const Footer = () => {
               <p className="">info@shiptech-icon.com</p>
             </div>
           </div>
-          <div className="flex gap-5 ml-7">
-            <div className="w-12 h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
+          <div className="flex gap-5 sm:ml-7">
+            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={fb} alt="fb" />
             </div>
-            <div className="w-12 h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-3">
+            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={linkedin} alt="fb" />
             </div>
           </div>
@@ -187,7 +187,7 @@ const Footer = () => {
           <h1 className="underline block underline-offset-[.7rem] mt-4 mb-7 text-2xl md:self-start font-body text-center md:text-left">
             Our Gallery
           </h1>
-          <div className="gallery grid grid-cols-3 xl:grid-cols-4 justify-center items-center gap-6 md:gap-3">
+          <div className="gallery grid grid-cols-3 xl:grid-cols-4 justify-center items-center gap-6 md:gap-3 px-3 sm:p-0">
             {gallery.map((item, index) => (
               <Image src={item.url} alt="gallery1" width={100} height={100} />
             ))}{" "}
@@ -195,14 +195,14 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full h-[.01rem] bg-gray-900" />
-      <div class="sm:flex sm:items-center sm:justify-around py-8">
-        <span class="text-md text-gray-500 sm:text-center dark:text-gray-400">
+      <div class="sm:flex sm:items-center md:text-start text-center sm:justify-around py-2 md:py-8">
+        <span class="text-xs md:text-md text-gray-500 sm:text-center dark:text-gray-400">
           Copyright ©2023
           <span className="text-shipy">ShipTech-ICON</span>. All Rights
           Reserved.
         </span>
-        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <span class="text-md tracking-wider text-gray-500 sm:text-center dark:text-gray-400">
+        <div class="flex text-center mt-1 md:mt-4 space-x-6 justify-center sm:mt-0">
+          <span class="text-xs  md:text-md tracking-wider text-gray-500 sm:text-center dark:text-gray-400">
             Terms & Conditions   |   Privacy Policy
           </span>
         </div>

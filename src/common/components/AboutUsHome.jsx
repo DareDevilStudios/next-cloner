@@ -7,12 +7,12 @@ const AboutUsHome = () => {
   return (
     <div>
       <section class="bg-white w-full">
-        <div class="flex items-center justify-center w-full py-8 gap-9 lg:py-16">
-          <div class="w-1/2 p-20">
+        <div class="flex md:flex-row flex-col items-center justify-center w-full py-8 gap-9 lg:py-16">
+          <div class="md:w-1/2 w-full px-7 md:p-20">
             <h3 className="font-semibold text-2xl text-gray-400 mb-4">
               About Us
             </h3>
-            <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
+            <h1 class="font-body w-11/12 mb-5 text-2xl md:text-4xl font-bold tracking-wide leading-1 text-blue-700">
               We Take Pride in Serving Our Customers Safely.
             </h1>
             <p class="text-justify mb-6 font-light lg:mb-8 ">
@@ -36,8 +36,8 @@ const AboutUsHome = () => {
               <h3 className="font-display tracking-wide font-normal text-xl text-black mb-7">
                 We Provide Best Quality Services
               </h3>
-              <div className="grid gap-4 text-gray-500 text-md tracking-wider">
-                <div className="grid grid-cols-2  ">
+              <div className="grid gap-2 md:gap-4 text-gray-500 text-md tracking-wider">
+                <div className="grid md:grid-cols-2 md:gap-0 gap-2  ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
                     <p className="font-normal ml-2">
@@ -51,7 +51,7 @@ const AboutUsHome = () => {
                     </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2">
+                <div className="grid md:grid-cols-2 md:gap-0 gap-2 ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
                     <p className="font-normal ml-2">
@@ -65,7 +65,7 @@ const AboutUsHome = () => {
                     </p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2">
+                <div className="grid md:grid-cols-2 md:gap-0 gap-2 ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
                     <p className="font-normal ml-2">

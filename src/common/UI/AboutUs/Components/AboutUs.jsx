@@ -6,8 +6,8 @@ import Return from "../../../../../public/assets/icons/return.svg";
 const AboutUs = () => {
   return (
     <div>
-        <div class="flex items-center justify-center w-full h-full py-8 gap-9 lg:py-16">
-          <div class="w-1/2 p-20">
+        <div class="flex md:flex-row flex-col items-center justify-center w-full h-full py-8 gap-9 lg:py-16">
+          <div class="w-full md:w-1/2 p-7 md:p-20">
             <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
               About Shiptech-ICON
             </h1>
