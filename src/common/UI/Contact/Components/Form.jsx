@@ -8,8 +8,8 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-around p-20">
-      <div className="w-2/5 border-2  flex flex-col p-16">
+    <div className="w-full flex md:flex-row flex-col items-center justify-around p-5 md:p-20">
+      <div className="md:w-2/5 border-2  flex flex-col p-5 md:p-16">
         <h1 className="text-4xl font-body ">
           SEND <span className="font-bold"> YOUR MESSAGE</span>
         </h1>

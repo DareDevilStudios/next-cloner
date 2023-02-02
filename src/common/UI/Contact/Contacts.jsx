@@ -16,7 +16,7 @@ const Contacts = () => {
       <Navbar />
       <Mtop />
       <Banner title="GET IN TOUCH" />
-      <div className="flex  w-full items-center justify-center gap-7 my-24">
+      <div className="flex flex-col md:flex-row w-full items-center justify-center gap-7 my-24">
       <Contact
         image={map}
         title="Address"

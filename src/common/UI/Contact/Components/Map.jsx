@@ -1,35 +1,21 @@
-import React from 'react';
+import React from "react";
 
 const Map = () => {
   return (
-    <div className="mapouter">
-      <div className="gmap_canvas">
+    <div className="mapouter relative text-right h-100 w-100 pt-5">
+      <div clasName=" bg-none h-100  w-[100px] md:w-[500px] m-0 p-0">
         <iframe
           width="100%"
           height="500"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?q=Ship Technology Industrial Consultancy, Center for Innovation Technology Transfer & Industrial Collaboration, CITTIC, CUSAT, Kochi, Kerala 682022&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameBorder="0"
+          src="https://maps.google.com/maps?q=Ship Technology Industrial Consultancy, Center for Innovation Technology Transfer & Industrial Collaboration, CITTIC, CUSAT, Kochi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
           scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-        />
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
         {/* <a href="https://2yu.co">2yu</a> */}
+        {/* <br> */}{" "}
       </div>
-      <style jsx>{`
-        .mapouter {
-          position: relative;
-          text-align: right;
-          height: 100%;
-          width: 100%;
-        }
-        .gmap_canvas {
-          overflow: hidden;
-          background: none !important;
-          height: 100%;
-          width: 100%;
-        }
-      `}</style>
     </div>
   );
 };

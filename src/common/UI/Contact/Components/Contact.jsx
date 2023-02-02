@@ -7,7 +7,7 @@ const Contact = ({image,title,subtitle, subtitle2, button}) => {
     <div className="w-max hover:shadow-md">
   <Card>
     
-    <div className="flex flex-col items-center pb-10 w-[20rem]">
+    <div className="flex flex-col items-center pb-10 md:w-[15rem]">
       <Image
         className="mb-3 h-24 w-24 "
         src={image}
