@@ -10,6 +10,7 @@ import Clients from "./Components/Clients.jsx";
 import Footer from "../../components/Footer.jsx";
 import Carousal3 from "./Components/Carousal3.jsx";
 import Mtop from "../../components/Mtop.jsx";
+import Carou4 from './Components/Carou4.jsx'
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Mtop/>
       {/* <Carousal/> */}
       <Carousal3/>
+      {/* <Carou4/> */}
       <div className="flex-col md:flex md:flex-row bg-shipblue text-shipy italic">
         <div className="w-full text-center py-7 font-display italic">
           <h1 className="text-3xl mb-6">Create |   Enhance |   Sustain</h1>

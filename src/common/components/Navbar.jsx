@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li className="mt-4 md:mt-0 ">
               <Link
-                href="#"
+                href="/contact"
                 class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
               >
                 ENQUIRY
