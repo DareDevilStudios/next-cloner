@@ -3,8 +3,8 @@ import React from "react";
 const Vision = () => {
   return (
     <div>
-      <div class="flex  w-full h-full px-20 text-center pb-32">
-        <div className="w-1/2 flex flex-col items-center justify-center w-full h-full px-20">
+      <div class="flex md:flex-row flex-col  w-full h-full md:px-20 text-center pb-32">
+        <div className="md:w-1/2 flex flex-col items-center justify-center w-full h-full px-5 md:px-20">
           <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
             Vision
           </h1>
@@ -18,7 +18,7 @@ const Vision = () => {
             and thereby bring about optimised CAPEX gains to the owner.
           </p>
         </div>
-        <div className="w-1/2 flex flex-col  w-full h-full px-20">
+        <div className="md:w-1/2 flex flex-col items-center justify-center w-full h-full px-5 md:px-20">
           <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
             Mission
           </h1>

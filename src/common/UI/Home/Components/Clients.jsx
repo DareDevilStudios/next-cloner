@@ -101,11 +101,11 @@ const Clients = () => {
   return (
     <div className="flex flex-col justify-center items-center my-20">
       <a href="#">
-        <h5 class="my-10 text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
+        <h5 class="my-10 text-3xl md:text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
           <span className="font-medium">OUR</span> CLIENTS
         </h5>
       </a>
-      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
+      <div className="flex sm:gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
         {client1.concat(client1).map((item, index) => {
           return (
             <Image
@@ -118,7 +118,7 @@ const Clients = () => {
           );
         })}
       </div>
-      <div className="flex gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
+      <div className="flex sm:gap-6 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
         {client2.concat(client2).map((item, index) => {
           return (
             <Image

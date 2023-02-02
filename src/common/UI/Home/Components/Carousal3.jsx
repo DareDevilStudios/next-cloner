@@ -26,10 +26,10 @@ const Carousal3 = () => {
   //   });
 
   return (
-    <div className="w-full h-[750px]  lg:h-[1440px]">
+    <div className="w-full h-[500px]  lg:h-[750px]">
       <Carousel leftControl="" rightControl="">
         <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mover mr-auto place-self-center pl-20 md:pl-[12rem]">
+          <div class="mover mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>
@@ -47,7 +47,7 @@ const Carousal3 = () => {
           </div>
         </div>
         <div className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mr-auto place-self-center pl-20 md:pl-[12rem]">
+          <div class="mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>
@@ -64,7 +64,7 @@ const Carousal3 = () => {
           </div>
         </div>
         <div className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
-          <div class="mr-auto place-self-center pl-20 md:pl-[12rem]">
+          <div class="mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
             </h1>

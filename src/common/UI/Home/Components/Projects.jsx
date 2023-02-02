@@ -10,24 +10,24 @@ const Projects = () => {
   return (
     <div className="w-100 my-14 flex-col md:flex md:flex-row justify-center items-center">
       <div className="w-100 flex justify-center items-center">
-        <div class="w-4/6 h-[45rem] self-baseline  bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-5/6 md:w-4/6 md:h-[45rem] self-baseline  bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <Image className="w-full h-1/2" src={F1} alt="" />
+            <Image className="w-full h-1/4 md:h-1/2" src={F1} alt="" />
           </a>
-          <div class="py-5 px-8">
+          <div class="py-5 px-4 md:px-8">
             <a href="#">
-              <h5 class="my-4 text-4xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
+              <h5 class="my-4 text-2xl md:text-4xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
                 <span className="font-medium">OUR</span> PROJECTS
               </h5>
             </a>
-            <p class="mb-3 text-md leading-9 tracking-widest font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-md leading-7 md:leading-9 md:tracking-widest font-normal text-gray-700 dark:text-gray-400">
               With our hardship, effort and the reliability that we offered to
               our customers, we built a numerous number of floating palaces
               around the globe.
             </p>
             <a
               href="#"
-              class="inline-flex items-center text-lg font-semibold text-center text-shipblue border-2 border-shipblue hover:text-white hover:bg-shipblue duration-300  mt-3 px-8 py-2"
+              class="inline-flex items-center text-lg font-semibold text-center text-shipblue border-2 border-shipblue hover:text-white hover:bg-shipblue duration-300  mt-3 px-4 md:px-8 py-1 md:py-2"
             >
               Explore more
               <svg
