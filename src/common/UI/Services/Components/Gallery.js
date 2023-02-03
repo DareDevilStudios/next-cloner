@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card.jsx";
+import Card from "./Card";
 import Naval from "../../../../../public/assets/images/resource/service/naval.jpg";
 import Hydrodynamics from "../../../../../public/assets/images/resource/service/hydrodynamics.jpg";
 import Marine from "../../../../../public/assets/images/resource/service/marine.jpg";

@@ -1,16 +1,16 @@
 import React from "react";
-import Navbar from "../../components/Navbar.jsx";
-import Carousal from "./Components/Carousal.jsx";
-import AboutUsHome from "../../components/AboutUsHome.jsx";
-import Services from "../../components/Services.jsx";
-import Achieve from "./Components/Achieve.jsx";
-import Projects from "./Components/Projects.jsx";
-import Testimonials from "./Components/Testimonials.jsx";
-import Clients from "./Components/Clients.jsx";
-import Footer from "../../components/Footer.jsx";
-import Carousal3 from "./Components/Carousal3.jsx";
-import Mtop from "../../components/Mtop.jsx";
-import Carou4 from './Components/Carou4.jsx'
+import Navbar from "../../components/Navbar";
+import Carousal from "./Components/Carousal";
+import AboutUsHome from "../../components/AboutUsHome";
+import Services from "../../components/Services";
+import Achieve from "./Components/Achieve";
+import Projects from "./Components/Projects";
+import Testimonials from "./Components/Testimonials";
+import Clients from "./Components/Clients";
+import Footer from "../../components/Footer";
+import Carousal3 from "./Components/Carousal3";
+import Mtop from "../../components/Mtop";
+import Carou4 from './Components/Carou4'
 
 const Home = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Map from './Map.jsx'
+import Map from './Map'
 
 const Form = () => {
   const dropopener = () => {
