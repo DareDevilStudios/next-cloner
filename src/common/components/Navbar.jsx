@@ -89,7 +89,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/designs"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 DESIGNS
@@ -133,8 +133,8 @@ const Navbar = () => {
             </li>
             <li className="mt-4 md:mt-0 ">
               <Link
-                href="#"
-                class="text-white   bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
+                href="/contact"
+                class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
               >
                 ENQUIRY
               </Link>

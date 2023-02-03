@@ -18,7 +18,10 @@ class AppDocument extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <title>ShipTech - Icon</title>
+        </Head>
         <body className="bg-p_back">
           <Main />
           <NextScript />
