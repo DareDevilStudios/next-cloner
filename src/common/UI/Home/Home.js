@@ -9,7 +9,7 @@ import Testimonials from "./Components/Testimonials";
 import Clients from "./Components/Clients";
 import Footer from "../../components/Footer";
 import Carousal3 from "./Components/Carousal3";
-import Mtop from "../../components/Mtop";
+import Mtop from "../../common/components/Mtop";
 import Carou4 from './Components/Carou4'
 
 const Home = () => {
