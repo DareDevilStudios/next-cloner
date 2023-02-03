@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
-import Mtop from '../../components/Mtop'
+import Mtop from '../../components/Mtop.jsx'
 import Header from './Components/Header'
 import AboutUs from './Components/AboutUs'
 import Banner from '../../components/Banner'
