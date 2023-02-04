@@ -10,7 +10,7 @@ const Clients = () => {
       url: "/assets/images/clients/2.png",
     },
     {
-      url: "/assets/images/clients/3.png",
+      url: "/assets/images/clients/3.jpeg",
     },
     {
       url: "/assets/images/clients/4.png",
@@ -46,7 +46,7 @@ const Clients = () => {
       url: "/assets/images/clients/14.png",
     },
     {
-      url: "/assets/images/clients/15.png",
+      url: "/assets/images/clients/15.jpeg",
     },
     {
       url: "/assets/images/clients/16.png",
@@ -61,25 +61,25 @@ const Clients = () => {
       url: "/assets/images/clients/19.png",
     },
     {
-      url: "/assets/images/clients/20.png",
+      url: "/assets/images/clients/20.jpg",
     },
     {
-      url: "/assets/images/clients/21.png",
+      url: "/assets/images/clients/21.jpg",
     },
     {
       url: "/assets/images/clients/22.png",
     },
     {
-      url: "/assets/images/clients/23.png",
+      url: "/assets/images/clients/23.jpeg",
     },
     {
-      url: "/assets/images/clients/24.png",
+      url: "/assets/images/clients/24.jpeg",
     },
     {
-      url: "/assets/images/clients/25.png",
+      url: "/assets/images/clients/25.webp",
     },
     {
-      url: "/assets/images/clients/26.png",
+      url: "/assets/images/clients/26.jpg",
     },
     {
       url: "/assets/images/clients/27.png",
