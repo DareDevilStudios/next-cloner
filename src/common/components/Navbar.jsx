@@ -29,33 +29,60 @@ const Navbar = () => {
         <Link href="/" class="flex items-center">
           <Image
             src={Logo}
-            class="w-[15rem] h-[5rem] mr-3"
+            class="w-[10rem] h-[3rem] md:w-[15rem] md:h-[5rem] mr-3"
             alt="Flowbite Logo"
           />
         </Link>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:text-shipy focus:outline-none focus:ring-2 focus:ring-gray-200  "
-          aria-controls="navbar-default"
-          aria-expanded="false"
-          onClick={opener}
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className="flex justify-center items-center gap-3">
+          <div class="text-shipblue md:hidden block text-md font-bold mt-1">
+            <button
+              onClick={showDrawer}
+              class=""
+              type="button"
+              data-drawer-target="drawer-contact"
+              data-drawer-show="drawer-contact"
+              aria-controls="drawer-contact"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"
+                />
+              </svg>
+            </button>
+          </div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center text-sm text-gray-500 rounded-lg md:hidden hover:text-shipy focus:outline-none focus:ring-2 focus:ring-gray-200  "
+            aria-controls="navbar-default"
+            aria-expanded="false"
+            onClick={opener}
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
         <div
           class="hidden w-full md:block md:w-auto duration-500"
           id="navbar-default"
@@ -143,7 +170,7 @@ const Navbar = () => {
         </div>
       </div>
       <Drawer
-        className="flex justify-between text-white md:px-5"
+        className="flex justify-between text-white px-14 md:px-5"
         placement="right"
         onClose={onClose}
         open={open}
