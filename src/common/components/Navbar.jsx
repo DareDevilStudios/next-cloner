@@ -104,7 +104,7 @@ const Navbar = () => {
                 CONTACT
               </Link>
             </li>
-            <li className="mt-4 md:mt-0 ">
+            <li className="mt-4 md:mt-0 hidden md:block">
               <div class="text-shipblue text-md font-bold py-3 px-7">
                 <button
                   onClick={showDrawer}
@@ -147,7 +147,22 @@ const Navbar = () => {
         placement="right"
         onClose={onClose}
         open={open}
-        style={{ width: 400, background: "#112", margin: 0, color: "#fff" }}
+        style={{
+          width: 400,
+          background: "#112",
+          margin: 0,
+          color: "#fff",
+          "@media (max-width: 768px)": {
+            width: 300,
+          },
+        }}
+
+        // style = {{
+
+        //   // Adding media query..
+        //   '@media (max-width: 640px)': {
+        //     width:200
+        //   }}}
       >
         <Image src={logo2} className="w-5/6" />
         <h1 className="pt-5 text-white text-2xl font-bold font-body">
@@ -157,7 +172,9 @@ const Navbar = () => {
           Our aim is to innovate, and improve the product and client processes
           so as to have cost effective and better solutions..
         </p>
-        <button className="px-5 border-2 py-2 mt-7 hover:bg-shipy hover:text-shipblue hover:border-0">CONTACT US</button>
+        <button className="px-5 border-2 py-2 mt-7 hover:bg-shipy hover:text-shipblue hover:border-0">
+          CONTACT US
+        </button>
         <h1 className="mt-14 text-2xl">Contact Info</h1>
         <div className="details my-4  text-md ">
           <div className="flex  gap-3 my-6">
