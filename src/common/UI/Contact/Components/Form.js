@@ -5,6 +5,7 @@ const Form = () => {
   const dropopener = () => {
     const dropdownHover = document.getElementById("dropdownHover");
     dropdownHover.classList.toggle("hidden");
+    console.log("hello");
   };
 
   return (
@@ -14,7 +15,7 @@ const Form = () => {
           SEND <span className="font-bold"> YOUR MESSAGE</span>
         </h1>
         <h5 className="text-sm text-gray-400 pt-3 ">
-          DON’T HESITATE TO CONTACT US
+          DON'T HESITATE TO CONTACT US
         </h5>
         <div className="flex pt-7 w-full">
           <div className="w-full mr-5">

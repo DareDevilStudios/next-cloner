@@ -22,6 +22,7 @@ function Carousal() {
         setCurrentIndex(0);
       }
     }, 5000);
+    console.log("hello");
   }, [currentIndex]);
 
   const slides = [
