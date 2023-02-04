@@ -30,9 +30,9 @@ const Clients = () => {
     {
       url: "/assets/images/clients/9.png",
     },
-    {
-      url: "/assets/images/clients/10.png",
-    },
+    // {
+    //   url: "/assets/images/clients/10.png",
+    // },
     {
       url: "/assets/images/clients/11.png",
     },
