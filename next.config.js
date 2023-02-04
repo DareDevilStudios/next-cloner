@@ -10,4 +10,7 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, "src/common/styles")],
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };

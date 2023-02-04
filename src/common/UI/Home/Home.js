@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import Carousal from "./Components/Carousal";
+import Carousal from "./components/Carousal";
 import AboutUsHome from "../../components/AboutUsHome";
 import Services from "../../components/Services";
-import Achieve from "./Components/Achieve";
-import Projects from "./Components/Projects";
-import Testimonials from "./Components/Testimonials";
-import Clients from "./Components/Clients";
+import Achieve from "./components/Achieve";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
+import Clients from "./components/Clients";
 import Footer from "../../components/Footer";
-import Carousal3 from "./Components/Carousal3";
+import Carousal3 from "./components/Carousal3";
 import Mtop from "../../components/Mtop";
 
 const Home = () => {
