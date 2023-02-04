@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
-import Banner from '../../common/components/Banner'
-import Mtop from '../../common/components/Mtop'
+import Banner from '../../components/Banner'
+import Mtop from '../../components/Mtop'
 import Gallery from './Components/Gallery'
 import Footer from '../../components/Footer'
 
