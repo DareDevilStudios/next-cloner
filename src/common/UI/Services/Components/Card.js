@@ -18,7 +18,7 @@ const Card = ({ title, desc, img , desc2 }) => {
           className=" rounded-t-lg"
           src={img}
           alt="rgh"
-          width="100%"
+          width="400"
           height="300"
         />
       </a>
