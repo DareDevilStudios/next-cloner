@@ -191,6 +191,22 @@ const Navbar = () => {
         //     width:200
         //   }}}
       >
+        <svg
+          onClick={onClose}
+          className="text-white w-6 h-6 mb-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
         <Image src={logo2} className="w-5/6" />
         <h1 className="pt-5 text-white text-2xl font-bold font-body">
           Get In Touch
