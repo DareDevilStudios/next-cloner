@@ -5,11 +5,11 @@ import Footer from "../../components/Footer";
 import Services from "../../components/Services";
 import Mtop from "../../components/Mtop";
 // import Carousal from "./components/Carousal";
-import Achieve from "./components/Achieve";
-import Projects from "./components/Projects";
-import Testimonials from "./components/Testimonials";
-import Clients from "./components/Clients";
-import Carousal3 from "./components/Carousal3";
+import Achieve from "./Components/Achieve";
+import Projects from "./Components/Projects";
+import Testimonials from "./Components/Testimonials";
+import Clients from "./Components/Clients";
+import Carousal3 from "./Components/Carousal3";
 
 const Home = () => {
   return (
