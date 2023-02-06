@@ -37,44 +37,44 @@ const AboutUsHome = () => {
                 We Provide Best Quality Services
               </h3>
               <div className="grid gap-2 md:gap-4 text-gray-500 text-md tracking-wider">
-                <div className="grid md:grid-cols-2 md:gap-0 gap-2  ">
+                <div className="grid md:grid-cols-2 md:gap-20 gap-2 lg:justify-center lg:items-center  ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                       Naval Architectural Services
                     </p>
                   </div>
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                       Product Designing
                     </p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 md:gap-0 gap-2 ">
+                <div className="grid md:grid-cols-2 md:gap-20 gap-2 lg:justify-center lg:items-center ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                       Marine Services
                     </p>
                   </div>
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                       Prototype Manufacturing
                     </p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 md:gap-0 gap-2 ">
+                <div className="grid md:grid-cols-2 md:gap-20 gap-2 lg:justify-center lg:items-center ">
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                     Structural Engineering Services
                     </p>
                   </div>
                   <div className="flex w-max">
                     <Image src={Return} alt="mockup" width={25} />
-                    <p className="font-normal ml-2">
+                    <p className="font-normal ml-2 w-full lg:w-3/4">
                     Hydrodynamics
                     </p>
                   </div>
@@ -83,7 +83,7 @@ const AboutUsHome = () => {
             </div>
           </div>
           <div class="">
-            <Image className="h-full" src={About} alt="mockup" />
+            <Image className="h-full xl:w-[32rem] lg:w-[24rem]" src={About} alt="mockup" />
           </div>
         </div>
       </section>
