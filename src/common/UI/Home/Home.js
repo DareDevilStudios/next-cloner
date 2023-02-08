@@ -10,20 +10,10 @@ import Projects from "./Components/Projects";
 import Testimonials from "./Components/Testimonials";
 import Clients from "./Components/Clients";
 import Carousal3 from "./Components/Carousal3";
-import Clienttest1 from "./Components/Clienttest1.jsx";
-import Clienttest2 from "./Components/Clienttest2.jsx";
+import Test from "./Components/Test";
 
 const Home = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const changeSlide = () => {
-    setActiveSlide((prevState) => (prevState + 1) % 2);
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(changeSlide, 1000);
-    return () => clearInterval(intervalId);
-  }, []);
-
+    
   return (
     <div className="relative w-full">
       <Navbar />
@@ -64,7 +54,8 @@ const Home = () => {
           <Clienttest2 />
         </div>
       </div> */}
-      <Clients/>
+      {/* <Clients/> */}
+      <Test/>
       <Footer />
     </div>
   );
