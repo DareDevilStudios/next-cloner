@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import Logo from "../../../public/assets/images/sticky-logo.png";
 import logo2 from "../../../public/assets/images/logo-two.png";
 import "../../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 
   const router = useRouter();
   return (
-    <nav class="border-gray-200 w-full sm:px-4 py-8 bg-white fixed top-0 z-[99]">
+    <div  class="border-gray-200 w-full sm:px-4 py-8 bg-white fixed top-0 z-[99]">
       <div class="flex flex-wrap items-center justify-around w-full">
         <Link href="/" class="flex items-center">
           <Image
@@ -286,7 +287,7 @@ const Navbar = () => {
           </div>
         </div>
       </Drawer>
-    </nav>
+    </div>
   );
 };
 

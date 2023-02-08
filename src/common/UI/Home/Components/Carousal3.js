@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel } from "flowbite-react";
-// import anime from "animejs/lib/anime.es.js";
+import { motion } from "framer-motion";
 
 const Carousal3 = () => {
   // const slides = [
@@ -26,12 +26,15 @@ const Carousal3 = () => {
   //   });
 
   return (
-    <div className="w-full h-[500px]  lg:h-[750px]">
+    <motion.nav animate={{ scale: [2, 1] }}
+    transition={{duration: 1, times: [0, 0.1, 0.4,0.7, 0.9, 1] }}
+     className="w-full h-[500px]  lg:h-[750px]"
+     >
       <Carousel leftControl="" rightControl="">
-        <div className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
+        <motion.div  className="flex bg-[url('/assets/images/main-slider/7.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mover mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
-              ICONIC PRODUCTS &
+              ICONIC PRODUCTS
             </h1>
             <h1 class=" mb-4 font-body font-extrabold tracking-wider leading-none text-4xl md:text-5xl lg:text-7xl text-white ease-in duration-700">
               Innovative <br /> Solutions
@@ -41,12 +44,12 @@ const Carousal3 = () => {
               href="#"
               class="inline-flex items-center justify-center px-10 py-3 mt-6 text-lg font-medium text-center border-2 border-gray-300 hover:bg-shipy hover:text-white hover:border-shipy focus:ring-4 text-white duration-500"
             >
-            
+
               Explore More
             </a>
           </div>
-        </div>
-        <div className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
+        </motion.div>
+        <motion.div  className="flex bg-[url('/assets/images/main-slider/8.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
@@ -62,8 +65,8 @@ const Carousal3 = () => {
               Explore More
             </a>
           </div>
-        </div>
-        <div className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
+        </motion.div>
+        <motion.div  className="flex bg-[url('/assets/images/main-slider/78.jpg')] bg-cover bg-no-repeat bg-center h-full items-center justify-center bg-gray-400  text-white">
           <div class="mr-auto place-self-center pl-10 sm:pl-20 md:pl-[12rem]">
             <h1 class=" mb-5 font-bold tracking-wide leading-none text-xl md:text-2xl text-white ease-in duration-700">
               ICONIC PRODUCTS &
@@ -79,9 +82,9 @@ const Carousal3 = () => {
               Explore More
             </a>
           </div>
-        </div>
+        </motion.div>
       </Carousel>
-    </div>
+    </motion.nav>
   );
 };
 
