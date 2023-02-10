@@ -11,6 +11,7 @@ import Testimonials from "./Components/Testimonials";
 import Clients from "./Components/Clients";
 import Carousal3 from "./Components/Carousal3";
 import ClientsAuto from "./Components/ClientsAuto";
+import Test2 from "./Components/Test2";
 
 const Home = () => {
 
@@ -48,9 +49,9 @@ const Home = () => {
       <Achieve />
       <Projects />
       <Testimonials />
-      <Clients />
+      <Test2 />
       {/* <ClientsAuto/> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
