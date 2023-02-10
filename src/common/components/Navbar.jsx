@@ -25,12 +25,12 @@ const Navbar = () => {
 
   const router = useRouter();
   return (
-    <div  class="border-gray-200 w-full sm:px-4 py-8 bg-white fixed top-0 z-[99]">
+    <motion.div initial={{ opacity: 0}} animate={{ opacity:1}} class="border-gray-200 w-full sm:px-4 py-5 md:py-0 bg-white fixed top-0 z-[99]">
       <div class="flex flex-wrap items-center justify-around w-full">
         <Link href="/" class="flex items-center">
           <Image
             src={Logo}
-            class="w-[10rem] h-[3rem] md:w-[15rem] md:h-[5rem] mr-3"
+            class="w-[10rem] h-[3rem] sm:w-[13rem] sm:h-[4rem] md:w-[12rem] md:h-[4rem] mr-3"
             alt="Flowbite Logo"
           />
         </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          class="hidden w-full md:block md:w-auto duration-500"
+          class="hidden w-full lg:block lg:w-auto duration-500"
           id="navbar-default"
         >
           <ul class="flex flex-col items-center justify-between p-4 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
@@ -162,7 +162,7 @@ const Navbar = () => {
             <li className="mt-4 md:mt-0 ">
               <Link
                 href="/contact"
-                class="text-white md:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
+                class="text-white xl:ml-20  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
               >
                 ENQUIRY
               </Link>
@@ -287,7 +287,7 @@ const Navbar = () => {
           </div>
         </div>
       </Drawer>
-    </div>
+    </motion.div>
   );
 };
 

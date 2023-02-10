@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar";
 import AboutUsHome from "../../components/AboutUsHome";
 import Footer from "../../components/Footer";
@@ -13,9 +13,25 @@ import Carousal3 from "./Components/Carousal3";
 import ClientsAuto from "./Components/ClientsAuto";
 
 const Home = () => {
+
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setShow(true);
+      } else setShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
+
   return (
     <div className="relative w-full">
-      <Navbar />
+      {
+        show && ( <Navbar /> )
+      }
       <Mtop />
       {/* <Carousal/> */}
       <Carousal3 />
