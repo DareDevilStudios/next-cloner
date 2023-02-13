@@ -15,24 +15,9 @@ import Test2 from "./Components/Test2";
 
 const Home = () => {
 
-  const [show, setShow] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setShow(true);
-      } else setShow(false);
-    });
-    return () => {
-      window.removeEventListener("scroll");
-    };
-  }, []);
-
   return (
     <div className="relative w-full">
-      {
-        show && ( <Navbar /> )
-      }
+      <Navbar />
       <Mtop />
       {/* <Carousal/> */}
       <Carousal3 />
