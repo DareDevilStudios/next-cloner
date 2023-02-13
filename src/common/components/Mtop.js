@@ -111,7 +111,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/designs"
                 class="block py-2 pl-3 pr-4 text-black  rounded hover:text-shipy md:border-0 md:p-0 text-md font-bold"
               >
                 DESIGNS
