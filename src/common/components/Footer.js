@@ -1,39 +1,70 @@
 import Image from "next/image";
-import React from "react";
+import React,{useState} from "react";
 import Logo from "../../../public/assets/images/footer-logo.png";
 import fb from "../../../public/assets/icons/fb.svg";
 import linkedin from "../../../public/assets/icons/linkedin.svg";
 
+// image imports
+import gallery1 from "../../../public/assets/images/gallery/gallery-thumb-1.jpg";
+import gallery2 from "../../../public/assets/images/gallery/gallery-thumb-2.jpg";
+import gallery3 from "../../../public/assets/images/gallery/gallery-thumb-3.jpg";
+import gallery4 from "../../../public/assets/images/gallery/gallery-thumb-4.jpg";
+import gallery5 from "../../../public/assets/images/gallery/gallery-thumb-5.jpg";
+import gallery6 from "../../../public/assets/images/gallery/gallery-thumb-6.jpg";
+import gallery7 from "../../../public/assets/images/gallery/gallery-thumb-7.jpg";
+import gallery8 from "../../../public/assets/images/gallery/gallery-thumb-8.jpg";
+
 const Footer = () => {
+
+  const [Value, setValue] = useState(false);
   const gallery = [
     {
-      url: "/assets/images/gallery/gallery-thumb-1.jpg",
+      url: gallery1,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-2.jpg",
+      url: gallery2,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-3.jpg",
+      url: gallery3,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-4.jpg",
+      url: gallery4,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-5.jpg",
+      url: gallery5,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-6.jpg",
+      url: gallery6,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-7.jpg",
+      url: gallery7,
     },
     {
-      url: "/assets/images/gallery/gallery-thumb-8.jpg",
+      url: gallery8,
     },
   ];
 
+  const modelOpen = (index) => {
+    setValue(index);
+    const drawer = document.getElementById(`${index}`);
+    const overlay = document.getElementById("overlay");
+    // const container = document.getElementById("container");
+    drawer.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    // container.classList.add("overflow-hidden");
+  };
+
+  const modelClose = () => {
+    const drawer = document.getElementById(`${Value}`);
+    const overlay = document.getElementById("overlay");
+    // const container = document.getElementById("container");
+    drawer.classList.add("hidden");
+    overlay.classList.add("hidden");
+    // container.classList.remove("overflow-hidden");
+  };
+
   return (
-    <div className="w-full bg-shipblue text-white">
+    <div className="relative w-full bg-shipblue text-white">
       <div className="top h-full md:h-[40rem] flex flex-col md:flex-row justify-around gap-3 lg:gap[5rem] xl:gap-[7rem] py-5">
         <div className="part1 w-full md:w-2/6 flex flex-col justify-center items-center md:items-start h-full">
           <Image className="w-56 my-4" src={Logo} alt="logo" />
@@ -189,8 +220,56 @@ const Footer = () => {
           </h1>
           <div className="gallery grid grid-cols-3 xl:grid-cols-4 justify-center items-center gap-6 md:gap-3 px-3 sm:p-0">
             {gallery.map((item, index) => (
-              <Image src={item.url} alt="gallery1" width={100} height={100} />
-            ))}{" "}
+              <div className="">
+                <Image onClick={() => modelOpen(index)} src={item.url} alt="gallery1" width={100} height={100} />
+
+
+                {/* modal */}
+                <div
+                  id={`${index}`}
+                  tabindex="-1"
+                  aria-hidden="true"
+                  class="absolute bottom-0 left-0 sm:left-[8%] md:left-[17%] xl:left-[25%] z-[100] hidden  h-max w-full py-10"
+                >
+                  <div
+                    id="modal_reach"
+                    class="relative w-full h-full max-w-2xl  font-body"
+                  >
+                    <div class="relative rounded-lg shadow bg-transparent px-7 h-[35rem]">
+                      <div class="flex  items-start justify-between p-4 rounded-t">
+
+                        <button
+                          onClick={modelClose}
+                          type="button"
+                          class="text-gray-400 bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                          data-modal-hide="defaultModal"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="w-5 h-5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                          <span class="sr-only">Close modal</span>
+                        </button>
+                      </div>
+                      <div className="flex flex-col px-4 pb-6 text-black">
+                        <Image src={item.url} alt="gallery1" className="w-[30rem]" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            ))}
+
           </div>
         </div>
       </div>
@@ -207,6 +286,13 @@ const Footer = () => {
           </span>
         </div>
       </div>
+
+      {/* overlay */}
+      <div
+        id="overlay"
+        class="fixed hidden inset-0 bg-black z-[99] bg-opacity-80 transition-opacity w-screen overflow-hidden"
+        aria-hidden="true"
+      ></div>
     </div>
   );
 };

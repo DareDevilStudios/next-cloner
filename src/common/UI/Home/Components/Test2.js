@@ -38,7 +38,7 @@ import Image34 from "../../../../../public/assets/images/clients/34.png";
 
 const Test = () => {
   return (
-    <div className="h-[12rem] xs:h-[17rem] sm:h-[10rem] md:h-[15rem]  mb:72  ">
+    <div className="h-[13rem] xs:h-[17rem] sm:h-[10rem] md:h-[15rem]  ">
       <h5 class="py-10  md:my-10 text-3xl md:text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white text-center">
         <span className="font-medium">OUR</span> CLIENTS
       </h5>
@@ -68,7 +68,7 @@ const Test = () => {
           <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image9} alt="..." />
         </div>
       </Carousel>
-      <Carousel className="px-10 ">
+      <Carousel className="px-10 mb-10">
         <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image17} alt="..." />
           <Image className="object-contain w-40" src={Image18} alt="..." />
