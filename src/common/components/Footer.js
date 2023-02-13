@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Link } from "next/link";
 import Logo from "../../../public/assets/images/footer-logo.png";
 import fb from "../../../public/assets/icons/fb.svg";
 import linkedin from "../../../public/assets/icons/linkedin.svg";
@@ -115,7 +116,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <p className="ml-2 hover:text-shipy duration-300">About Us</p>
+              <a href="/about" className="ml-2 hover:text-shipy duration-300">About Us</a>
             </div>
             <div className="link flex">
               <svg
@@ -131,7 +132,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <p className="ml-2 hover:text-shipy duration-300">Services</p>
+              <a href="/services" className="ml-2 hover:text-shipy duration-300">Services</a>
             </div>
             <div className="link flex">
               <svg
@@ -147,7 +148,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <p className="ml-2 hover:text-shipy duration-300">Projects</p>
+              <a href="/designs" className="ml-2 hover:text-shipy duration-300">Projects</a>
             </div>
             <div className="link flex">
               <svg
@@ -163,7 +164,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <p className="ml-2 hover:text-shipy duration-300">Portfolio</p>
+              <a href="/" className="ml-2 hover:text-shipy duration-300">Portfolio</a>
             </div>
             <div className="link flex">
               <svg
@@ -179,7 +180,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <p className="ml-2 hover:text-shipy duration-300">Contact Us</p>
+              <a href="/contact" className="ml-2 hover:text-shipy duration-300">Contact Us</a>
             </div>
           </div>
         </div>
