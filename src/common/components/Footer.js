@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "next/link";
 import Logo from "../../../public/assets/images/footer-logo.png";
 import fb from "../../../public/assets/icons/fb.svg";
@@ -8,16 +8,19 @@ import linkedin from "../../../public/assets/icons/linkedin.svg";
 // image imports
 import gallery1 from "../../../public/assets/images/gallery/gallery-thumb-1.jpg";
 import gallery2 from "../../../public/assets/images/gallery/gallery-thumb-2.jpg";
-import gallery3 from "../../../public/assets/images/gallery/gallery-thumb-3.jpg";
-import gallery4 from "../../../public/assets/images/gallery/gallery-thumb-4.jpg";
-import gallery5 from "../../../public/assets/images/gallery/gallery-thumb-5.jpg";
+import gallery3 from "../../../public/assets/images/gallery/gallery-thumb-3.png";
+import gallery4 from "../../../public/assets/images/gallery/gallery-thumb-4.png";
+import gallery5 from "../../../public/assets/images/gallery/gallery-thumb-5.png";
 import gallery6 from "../../../public/assets/images/gallery/gallery-thumb-6.jpg";
 import gallery7 from "../../../public/assets/images/gallery/gallery-thumb-7.jpg";
 import gallery8 from "../../../public/assets/images/gallery/gallery-thumb-8.jpg";
+import gallery9 from "../../../public/assets/images/gallery/gallery-thumb-9.png";
+import gallery10 from "../../../public/assets/images/gallery/gallery-thumb-10.png";
+import { motion } from "framer-motion";
 
 const Footer = () => {
 
-  const [Value, setValue] = useState(false);
+  const [Value, setValue] = useState(0);
   const gallery = [
     {
       url: gallery1,
@@ -43,16 +46,40 @@ const Footer = () => {
     {
       url: gallery8,
     },
+    {
+      url: gallery9,
+    },
+    {
+      url: gallery10,
+    }
   ];
 
+  function disableScroll() {
+    // Get the current page scroll position
+    let scrollTop =
+      window.pageYOffset || document.documentElement.scrollTop;
+    let scrollLeft =
+      window.pageXOffset || document.documentElement.scrollLeft;
+
+    // if any scroll is attempted,
+    // set this to the previous value
+    window.onscroll = function () {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
+  }
+
+  function enableScroll() {
+    window.onscroll = function () { };
+  }
+
   const modelOpen = (index) => {
-    setValue(index);
     const drawer = document.getElementById(`${index}`);
     const overlay = document.getElementById("overlay");
     // const container = document.getElementById("container");
     drawer.classList.remove("hidden");
     overlay.classList.remove("hidden");
     // container.classList.add("overflow-hidden");
+    disableScroll();
   };
 
   const modelClose = () => {
@@ -62,10 +89,30 @@ const Footer = () => {
     drawer.classList.add("hidden");
     overlay.classList.add("hidden");
     // container.classList.remove("overflow-hidden");
+    enableScroll();
+  };
+
+  const slideNext = (index) => {
+    if (Value === gallery.length - 1) {
+      setValue(0);
+    } else {
+      setValue(Value + 1);
+    }
+  };
+
+  const slidePrev = (index) => {
+    if (Value === 0) {
+      setValue(gallery.length - 1);
+    } else {
+      setValue(Value - 1);
+    }
   };
 
   return (
-    <div className="relative w-full bg-shipblue text-white">
+    <motion.div
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      transition={{ type: "tween", stiffness: 100 }} className="relative w-full bg-shipblue text-white">
       <div className="top h-full md:h-[40rem] flex flex-col md:flex-row justify-around gap-3 lg:gap[5rem] xl:gap-[7rem] py-5">
         <div className="part1 w-full md:w-2/6 flex flex-col justify-center items-center md:items-start h-full">
           <Image className="w-56 my-4" src={Logo} alt="logo" />
@@ -120,10 +167,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex gap-5 sm:ml-7">
-            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
+            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={fb} alt="fb" />
             </div>
-            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-gray-100 bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
+            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={linkedin} alt="fb" />
             </div>
           </div>
@@ -216,13 +263,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="part3 my-6 md:my-0 flex flex-col justify-center items-center h-full text-lg">
-          <h1 className="underline block underline-offset-[.7rem] mt-4 mb-7 text-2xl md:self-start font-body text-center md:text-left">
+          <h1 className="underline block underline-offset-[.7rem] mt-4 mb-7 text-2xl  font-body text-center md:text-left">
             Our Gallery
           </h1>
-          <div className="gallery grid grid-cols-3 xl:grid-cols-4 justify-center items-center gap-6 md:gap-3 px-3 sm:p-0">
+          <div className="gallery grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-6 md:gap-3 px-3 sm:p-0">
             {gallery.map((item, index) => (
               <div className="">
-                <Image onClick={() => modelOpen(index)} src={item.url} alt="gallery1" width={100} height={100} />
+                <Image onClick={() => {
+                  setValue(index)
+                  modelOpen(index)
+                }
+                } src={item.url} alt="gallery1" width={125} height={125} />
+
 
 
                 {/* modal */}
@@ -230,7 +282,7 @@ const Footer = () => {
                   id={`${index}`}
                   tabindex="-1"
                   aria-hidden="true"
-                  class="absolute bottom-0 left-0 sm:left-[8%] md:left-[17%] xl:left-[25%] z-[100] hidden  h-max w-full py-10"
+                  class="absolute bottom-0 left-0 sm:left-[8%] md:left-[17%] xl:left-[30%] z-[100] hidden  h-max w-full py-10"
                 >
                   <div
                     id="modal_reach"
@@ -261,8 +313,20 @@ const Footer = () => {
                           <span class="sr-only">Close modal</span>
                         </button>
                       </div>
-                      <div className="flex flex-col px-4 pb-6 text-black">
-                        <Image src={item.url} alt="gallery1" className="w-[30rem]" />
+                      <div className="flex relative flex-col px-4 pb-6 text-black">
+                        <Image src={item.url} alt="gallery1" className="w-[100rem]" />
+                        {/* <button onClick={() => slideNext(index)} type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                          </span>
+                        </button>
+                        <button onClick={() => slidePrev(index)} type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                          </span>
+                        </button> */}
                       </div>
                     </div>
                   </div>
@@ -294,7 +358,7 @@ const Footer = () => {
         class="fixed hidden inset-0 bg-black z-[99] bg-opacity-80 transition-opacity w-screen overflow-hidden"
         aria-hidden="true"
       ></div>
-    </div>
+    </motion.div>
   );
 };
 

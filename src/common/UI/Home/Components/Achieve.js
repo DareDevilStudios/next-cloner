@@ -1,9 +1,14 @@
 import React from "react";
 import bg from "../../../../../public/assets/images/background/banner-6.jpg";
+import { motion } from "framer-motion";
 
 const Achieve = () => {
   return (
-    <div
+    <motion.div
+        initial={{ y: 100 , opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+
+        transition={{ type: "bounce", stiffness: 100 }}
       className="py-10 md:py-0 w-full md:h-[30rem] bg-no-repeat bg-cover flex justify-center items-center"
       style={{
         backgroundImage: `url(${bg.src})`,
@@ -25,7 +30,7 @@ const Achieve = () => {
           </div>
         </dl>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

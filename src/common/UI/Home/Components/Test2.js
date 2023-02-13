@@ -35,15 +35,20 @@ import Image31 from "../../../../../public/assets/images/clients/31.png";
 import Image32 from "../../../../../public/assets/images/clients/32.png";
 import Image33 from "../../../../../public/assets/images/clients/33.png";
 import Image34 from "../../../../../public/assets/images/clients/34.png";
+import { motion } from "framer-motion";
 
 const Test = () => {
   return (
-    <div className="h-[13rem] xs:h-[17rem] sm:h-[10rem] md:h-[15rem]  ">
-      <h5 class="py-10  md:my-10 text-3xl md:text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white text-center">
+    <div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+
+      transition={{ type: "bounce", stiffness: 100 }} className="h-[24rem] xs:h-[28rem] sm:h-[10rem] md:h-[15rem]  ">
+      <h5 class="pt-[5rem] text-3xl md:text-5xl font-bold tracking-wide font-inter text-gray-900 dark:text-white text-center">
         <span className="font-medium">OUR</span> CLIENTS
       </h5>
       <Carousel className="overflow-hidden px-10">
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-52 md:w-40" src={Image1} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image2} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image3} alt="..." />
@@ -51,15 +56,15 @@ const Test = () => {
           <Image className="object-contain w-52 md:w-40 " src={Image5} alt="..." />
           <Image className="object-contain w-52 md:w-40 sm:hidden" src={Image11} alt="..." />
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-14 md:gap-10 justify-around px:10 lg:px-20  overflow-hidden items-center ">
-          <Image className="object-contain w-24 md:w-40" src={Image6} alt="..." />
-          <Image className="object-contain w-24 md:w-40" src={Image7} alt="..." />
-          <Image className="object-contain w-24 md:w-40" src={Image8} alt="..." />
-          <Image className="object-contain w-24 md:w-40" src={Image9} alt="..." />
-          <Image className="object-contain w-24 md:w-40 " src={Image11} alt="..." />
-          <Image className="object-contain w-24 md:w-40 sm:hidden" src={Image5} alt="..." />
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-14 md:gap-10 justify-around px:10 lg:px-20  overflow-hidden items-center ">
+          <Image className="object-contain w-32 md:w-40" src={Image6} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image7} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image8} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image9} alt="..." />
+          <Image className="object-contain w-32 md:w-40 " src={Image11} alt="..." />
+          <Image className="object-contain w-32 md:w-40 sm:hidden" src={Image5} alt="..." />
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16 md:gap-10 justify-around px:10 lg:px-20 overflow-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16 md:gap-10 justify-around px:10 lg:px-20 overflow-hidden items-center ">
           <Image className="object-contain w-52 md:w-40" src={Image12} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image32} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image14} alt="..." />
@@ -69,7 +74,7 @@ const Test = () => {
         </div>
       </Carousel>
       <Carousel className="px-10 mb-10">
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image17} alt="..." />
           <Image className="object-contain w-40" src={Image18} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image19} alt="..." />
@@ -77,15 +82,15 @@ const Test = () => {
           <Image className="object-contain w-20 " src={Image21} alt="..." />
           <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image16} alt="..." />
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image22} alt="..." />
-          <Image className="object-contain w-40" src={Image23} alt="..." />
-          <Image className="object-contain w-72" src={Image24} alt="..." />
-          <Image className="object-contain w-40" src={Image25} alt="..." />
+          <Image className="object-contain w-32" src={Image23} alt="..." />
+          <Image className="object-contain w-96" src={Image24} alt="..." />
+          <Image className="object-contain w-32" src={Image25} alt="..." />
           <Image className="object-contain w-[21rem]" src={Image26} alt="..." />
-          <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image21} alt="..." />
+          <Image className="object-contain w-28 md:w-40  sm:hidden" src={Image21} alt="..." />
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image27} alt="..." />
           <Image className="object-contain w-40" src={Image28} alt="..." />
           <Image className="object-contain w-40" src={Image29} alt="..." />
@@ -93,16 +98,16 @@ const Test = () => {
           <Image className="object-contain w-40 " src={Image31} alt="..." />
           <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image26} alt="..." />
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image33} alt="..." />
           <Image className="object-contain w-40" src={Image34} alt="..." />
           <Image className="object-contain w-72" src={Image24} alt="..." />
-          <Image className="object-contain w-40" src={Image25} alt="..." />
+          <Image className="object-contain w-32" src={Image25} alt="..." />
           <Image className="object-contain w-[21rem]" src={Image26} alt="..." />
           <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image27} alt="..." />
         </div>
       </Carousel>
-      
+
       <Footer />
     </div>
   );

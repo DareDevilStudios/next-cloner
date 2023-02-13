@@ -27,6 +27,7 @@ module.exports = {
     fontFamily: {
       body: ['Cinzel', 'serif'],
       display: ['Fauna One', 'serif'],
+      inter: ['Inter', 'sans-serif'],
     },
     backgroundSize: {
       'auto': 'auto',

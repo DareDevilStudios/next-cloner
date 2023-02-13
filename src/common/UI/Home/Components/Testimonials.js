@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import F1 from "../../../../../public/assets/images/about-home2.jpg";
 import backg from "../../../../../public/assets/images/background/image-2.jpg";
 import { Carousel } from "flowbite-react";
+import { motion } from "framer-motion";
 
 const Testimonials = () => {
   const [index, setindex] = useState(0);
@@ -32,12 +33,16 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div className="flex flex-col  w-full py-2 h-[30rem]  sm:h-[40rem] bg-shipblue bg-opacity-90">
-        <div className="flex justify-center items-center my-3 sm:my-[2rem]">
-          <h1 className="text-2xl md:text-5xl font-bold tracking-wide font-body text-white">TESTIMONIALS</h1>
+      <motion.div
+        initial={{ y: 100 , opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+
+        transition={{ type: "bounce", stiffness: 100 }} className="flex flex-col  w-full py-2 h-[30rem]  sm:h-[45rem] bg-shipblue bg-opacity-90">
+        <div className="flex justify-center items-center my-5 sm:my-[4rem]">
+          <h1 className="sm:text-4xl text-3xl md:text-5xl font-bold tracking-wide font-inter text-white">TESTIMONIALS</h1>
         </div>
         <div class="sm:grid h-56 hidden sm:grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96">
-            <Carousel leftControl="" rightControl="">
+            <Carousel className="text-transparent" leftControl="1" rightControl="1">
               <div class="w-4/6 md:w-5/6 h-[25rem] sm:h-full flex flex-col justify-around items-center bg-white rounded  px-4 py-8 mx-auto text-center lg:py-6 lg:px-6">
                 <figure class="max-w-screen-md h-1/6 mx-auto flex flex-col justify-around items-center">
                   <svg
@@ -203,7 +208,7 @@ const Testimonials = () => {
                 </figure>
               </div>
             </Carousel>
-            <Carousel leftControl="" rightControl="">
+            <Carousel className="text-transparent" leftControl="1" rightControl="1">
               <div class="w-4/6 md:w-5/6 h-[25rem] md:h-full flex flex-col justify-around items-center bg-white rounded  px-4 py-8 mx-auto text-center lg:py-6 lg:px-6">
                 <figure class="max-w-screen-md h-1/6 mx-auto flex flex-col justify-around items-center">
                   <svg
@@ -540,7 +545,7 @@ const Testimonials = () => {
               </div>
             </Carousel>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
