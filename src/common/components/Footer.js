@@ -4,6 +4,7 @@ import { Link } from "next/link";
 import Logo from "../../../public/assets/images/footer-logo.png";
 import fb from "../../../public/assets/icons/fb.svg";
 import linkedin from "../../../public/assets/icons/linkedin.svg";
+import { useRouter } from 'next/router'
 
 // image imports
 import gallery1 from "../../../public/assets/images/gallery/gallery-thumb-1.jpg";
@@ -19,6 +20,8 @@ import gallery10 from "../../../public/assets/images/gallery/gallery-thumb-10.pn
 import { motion } from "framer-motion";
 
 const Footer = () => {
+
+  const router = useRouter()
 
   const [Value, setValue] = useState(0);
   const gallery = [
@@ -75,9 +78,10 @@ const Footer = () => {
   const modelOpen = (index) => {
     const drawer = document.getElementById(`${index}`);
     const overlay = document.getElementById("overlay");
-    // const container = document.getElementById("container");
+    // const container = document.getElementById("footer");
     drawer.classList.remove("hidden");
     overlay.classList.remove("hidden");
+    router.push("#footer")
     // container.classList.add("overflow-hidden");
     disableScroll();
   };
@@ -92,24 +96,25 @@ const Footer = () => {
     enableScroll();
   };
 
-  const slideNext = (index) => {
-    if (Value === gallery.length - 1) {
-      setValue(0);
-    } else {
-      setValue(Value + 1);
-    }
-  };
+  // const slideNext = (index) => {
+  //   if (Value === gallery.length - 1) {
+  //     setValue(0);
+  //   } else {
+  //     setValue(Value + 1);
+  //   }
+  // };
 
-  const slidePrev = (index) => {
-    if (Value === 0) {
-      setValue(gallery.length - 1);
-    } else {
-      setValue(Value - 1);
-    }
-  };
+  // const slidePrev = (index) => {
+  //   if (Value === 0) {
+  //     setValue(gallery.length - 1);
+  //   } else {
+  //     setValue(Value - 1);
+  //   }
+  // };
 
   return (
     <motion.div
+      id="footer"
       initial={{ y: 100 }}
       whileInView={{ y: 0 }}
       transition={{ type: "tween", stiffness: 100 }} className="relative w-full bg-shipblue text-white">
