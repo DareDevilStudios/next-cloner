@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const router = useRouter();
   return (
-    <nav class="border-gray-200 w-full sm:px-4 py-8 bg-white">
+    <nav class="border-gray-200 w-full sm:px-4 bg-white">
       <div class="flex flex-wrap items-center justify-around w-full">
         <Link href="/" class="flex items-center">
           <Image
@@ -156,7 +156,7 @@ const Navbar = () => {
             </li>
             <li className="mt-4 md:mt-0 ">
               <Link
-                href="#"
+                href="/contact"
                 class="text-white  bg-shipblue  hover:bg-shipy duration-500 text-md font-bold py-3 px-7"
               >
                 ENQUIRY

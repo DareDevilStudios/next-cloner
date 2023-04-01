@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Sevices = () => {
@@ -22,7 +23,7 @@ const Sevices = () => {
           </p>
         </div>
         <div class="flex md:flex-row flex-col gap-5 w-full lg:mb-16 justify-center items-center mx-auto">
-          <div className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/naval.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+          <Link href="/services" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/naval.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
             
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
@@ -31,9 +32,9 @@ const Sevices = () => {
             </div>
             {/* overlay */}
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-          </div>
+          </Link>
 
-          <div className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Structural.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+          <Link href="/services" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Structural.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
             
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
@@ -42,8 +43,8 @@ const Sevices = () => {
             </div>
             {/* overlay */}
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-          </div>
-          <div className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Hydrodynamics.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+          </Link>
+          <Link href="/services" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Hydrodynamics.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
 
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
@@ -52,8 +53,8 @@ const Sevices = () => {
             </div>
             {/* overlay */}
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-          </div>
-          <div className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/naval.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+          </Link>
+          <Link href="/services" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Product.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
 
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
@@ -62,8 +63,8 @@ const Sevices = () => {
             </div>
             {/* overlay */}
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-          </div>
-          <div className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Marine.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+          </Link>
+          <Link href="/services" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Marine.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
 
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
@@ -72,7 +73,7 @@ const Sevices = () => {
             </div>
             {/* overlay */}
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-          </div>
+          </Link>
         </div>
       </motion.div>
     </section>

@@ -25,9 +25,10 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     fontFamily: {
-      body: ['Cinzel', 'serif'],
-      display: ['Fauna One', 'serif'],
-      inter: ['Inter', 'sans-serif'],
+      body: ['serif'],
+      display: ['serif'],
+      inter: ['sans-serif'],
+      noto: ['sans-serif'],
     },
     backgroundSize: {
       'auto': 'auto',

@@ -25,7 +25,7 @@ const Projects = () => {
                 <span className="font-normal">OUR</span> PROJECTS
               </h5>
             </a>
-            <p class="mb-3 text-md leading-7 md:leading-9 md:tracking-widest font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-md leading-7 md:leading-9 font-normal text-gray-800">
               With our hardship, effort and the reliability that we offered to
               our customers, we built a numerous number of floating palaces
               around the globe.
