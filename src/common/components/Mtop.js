@@ -211,7 +211,7 @@ const Navbar = () => {
           Our aim is to innovate, and improve the product and client processes
           so as to have cost effective and better solutions..
         </p>
-        <button className="px-5 border-2 py-2 mt-7 hover:bg-shipy hover:text-shipblue hover:border-0">
+        <button onClick={() => router.push('/contact')} className="px-5 border-2 py-2 mt-7 hover:bg-shipy hover:text-shipblue hover:border-0">
           CONTACT US
         </button>
         <h1 className="mt-14 text-2xl">Contact Info</h1>

@@ -39,9 +39,9 @@ const Clients = () => {
     {
       url: "/assets/images/clients/12.png",
     },
-    {
-      url: "/assets/images/clients/13.png",
-    },
+    // {
+    //   url: "/assets/images/clients/13.png",
+    // },
     {
       url: "/assets/images/clients/14.png",
     },
@@ -112,11 +112,11 @@ const Clients = () => {
 
   return (
     <div className="flex flex-col justify-center items-center my-20">
-      <a href="#">
+
         <h5 class="my-10 text-3xl md:text-5xl font-bold tracking-wide font-body text-gray-900 dark:text-white">
           <span className="font-medium">OUR</span> CLIENTS
         </h5>
-      </a>
+
       <div className="flex sm:gap-16 w-5/6 px-3 overflow-x-scroll scroll scrollbar-none my-10">
         {cli1.concat(cli1).map((item, index) => {
           return (

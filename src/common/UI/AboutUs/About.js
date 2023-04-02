@@ -12,7 +12,7 @@ const About = () => {
     <div>
         <Navbar/>
         <Mtop/>
-        <Banner title="About Us" />
+        <Banner title="ABOUT US" />
         <AboutUs/>
         <Vision/>
         <Footer/>

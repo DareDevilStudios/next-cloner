@@ -24,7 +24,7 @@ const Card = ({ title, desc, img , desc2 }) => {
       </a>
       <div className="relative p-5">
         <a href="#">
-          <h5 className="w-5/6 font-display py-5 px-2 md:pt-5 md:pb-10 text-center  md:h-[5rem] lg:w-[14rem] xl:w-[20rem] md:w-[16rem] absolute -top-9 bg-gray-200 text-shipblue hover:text-shipy hover:bg-shipblue mb-2 text-md md:text-lg font-normal tracking-tight duration-500">
+          <h5 className="w-5/6 font-display py-5 px-2 md:pt-5 md:pb-10 text-center  md:h-[5rem] lg:w-[14rem] xl:w-[20rem] md:w-[16rem] absolute -top-9 bg-gray-200 text-shipblue hover:text-shipy hover:bg-shipblue mb-2 text-md md:text-xl tracking-tight duration-500">
             {title}
           </h5>
         </a>
