@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 import Logo from "../../../public/assets/images/footer-logo.png";
 import fb from "../../../public/assets/icons/fb.svg";
 import linkedin from "../../../public/assets/icons/linkedin.svg";
@@ -172,12 +172,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex gap-5 sm:ml-7">
-            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
+            <Link href="https://www.facebook.com/SHIPTECHicon" className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={fb} alt="fb" />
-            </div>
-            <div className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
+            </Link>
+            <Link href="https://www.linkedin.com/company/shiptech-icon/" className="w-7 h-7  sm:w-12  sm:h-12 bg-transparent border-2 border-shipy bg-opacity-50 hover:bg-shipy duration-500 rounded-full flex justify-center items-center p-2 sm:p-3">
               <Image className="w-9 text-white" src={linkedin} alt="fb" />
-            </div>
+            </Link>
           </div>
         </div>
         <div className="part2 flex flex-col justify-center items-center h-full text-xl">
@@ -247,7 +247,7 @@ const Footer = () => {
                   d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
                 ></path>
               </svg>
-              <a href="/" className="ml-2 hover:text-shipy duration-300">Portfolio</a>
+              <Link href="/assets/images/brochure/brochure.pdf" className="ml-2 hover:text-shipy duration-300">Portfolio</Link>
             </div>
             <div className="link flex">
               <svg

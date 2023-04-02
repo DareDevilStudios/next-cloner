@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 
 const Designs = () => {
   return (
-    <div>
+    <div id="top" className="relative">
       <Navbar />
       <Mtop />
       <Banner title="OUR DESIGNS" />

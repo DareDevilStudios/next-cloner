@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import Opener from "../../../../../public/assets/images/icons/modelopen.svg";
 import { Table } from "flowbite-react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Gallery = () => {
+  const router = useRouter();
   const [Value, setValue] = useState("");
   const gallery = [
     {
@@ -27,7 +29,7 @@ const Gallery = () => {
     {
       title: "MANTA",
       url: "/assets/images/projects/manta.png",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "With a bold exterior conceiling a spacious interior. This addition is sure to delight the adventurous with its incredible performance and se-keeping, fantastic handing and ability to reach speeds upto 38 knots.",
       length: "19.17m",
       // width: "2.5m",
@@ -44,7 +46,7 @@ const Gallery = () => {
     {
       title: "OCEAN BLUE",
       url: "/assets/images/projects/oceanblue.jpg",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "FRP hull with OBM. Ideal for sport fishing. Recreational purposes & Work in harsh offshore waterways.",
       length: "5.90m",
       width: "2.40m",
@@ -61,7 +63,7 @@ const Gallery = () => {
     {
       title: "PATROL VESSEL",
       url: "/assets/images/projects/patrolvessel.jpg",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "FRP hull with Stern drive. Speed of 55 knots can be acheived through the use of composite material & a smart design",
       length: "14.5m",
       width: "3.5m",
@@ -78,7 +80,7 @@ const Gallery = () => {
     {
       title: "PRIME",
       url: "/assets/images/projects/prime.jpg",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "Provocative, cutting edge, exhilarating - announcing the highly anticipated, all new prime class.",
       length: "10 - 12 m",
       // width: "2.5m",
@@ -95,7 +97,7 @@ const Gallery = () => {
     {
       title: "THE SHIFT",
       url: "/assets/images/projects/shift.png",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "A combination of stunning design, quality and race-bred Technology. A revolutionary performance experience at All speeds",
       length: "10 -12 m",
       // width: "2.5m",
@@ -112,7 +114,7 @@ const Gallery = () => {
     {
       title: "WORK BOAT",
       url: "/assets/images/projects/workboat.jpg",
-      brochure: "/assets/images/brochure/brochure.pdf",
+      // brochure: "/assets/images/brochure/brochure.pdf",
       desc: "A composite construction and straight forward onboard systems ensure an easy to maintain vessel that is light and easily transportable anywhere in the world",
       length: "11.9m",
       width: "4.0m",
@@ -133,10 +135,10 @@ const Gallery = () => {
     const drawer = document.getElementById(`${index}`);
     const overlay = document.getElementById("overlay");
     const container = document.getElementById("container");
+    router.push("#top")
     drawer.classList.remove("hidden");
     overlay.classList.remove("hidden");
     container.classList.add("overflow-hidden");
-    mylinkfunction();
   };
 
   const modelClose = () => {
@@ -148,14 +150,10 @@ const Gallery = () => {
     container.classList.remove("overflow-hidden");
   };
 
-  const mylinkfunction = () => {
-    window.location.href = "#container";
-  };
-
   return (
     <div
       id="container"
-      className="flex relative w-full justify-center items-center my-20"
+      className="flex w-full justify-center items-center my-20"
     >
       <div className=" grid grid-cols-1 lg:grid-cols-2  xl:grid-cols-3 px-5 md:px-0 md:gap-10 justify-center items-center">
         {gallery.map((item, index) => (
@@ -219,13 +217,20 @@ const Gallery = () => {
                       <span class="sr-only">Close modal</span>
                     </button>
                   </div>
+                  {
+                    item.brochure && (
+                      <div className="flex flex-col px-4 pb-6 text-black">
+                        <Link
+                          href={item.brochure}
+                          className="text-xl font-bold underline"
+                        >
+                          Brochure
+                        </Link>
+                      </div>
+                    )
+                  }
                   <div className="flex flex-col px-4 pb-6 text-black">
-                    <Link
-                      href={item.brochure}
-                      className="text-xl font-bold underline"
-                    >
-                      Brochure
-                    </Link>
+
                     <p className="text-xl text-black my-5">{item.desc}</p>
                   </div>
                   <hr />

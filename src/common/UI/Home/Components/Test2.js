@@ -47,7 +47,7 @@ const Test = () => {
       <h5 class="pt-[5rem] text-3xl md:text-5xl font-bold tracking-wide font-inter text-gray-900 dark:text-white text-center">
         <span className="font-medium">OUR</span> CLIENTS
       </h5>
-      <Carousel className="overflow-hidden px-10">
+      <Carousel slideInterval={5000} className="overflow-hidden px-10">
         <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-52 md:w-40" src={Image1} alt="..." />
           <Image className="object-contain w-52 md:w-40" src={Image2} alt="..." />
@@ -72,8 +72,16 @@ const Test = () => {
           <Image className="object-contain w-52 md:w-40  " src={Image16} alt="..." />
           <Image className="object-contain w-52 md:w-40  sm:hidden" src={Image9} alt="..." />
         </div>
+        <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-14 md:gap-10 justify-around px:10 lg:px-20  overflow-hidden items-center ">
+          <Image className="object-contain w-32 md:w-40" src={Image6} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image7} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image8} alt="..." />
+          <Image className="object-contain w-32 md:w-40" src={Image9} alt="..." />
+          <Image className="object-contain w-32 md:w-40 " src={Image11} alt="..." />
+          <Image className="object-contain w-32 md:w-40 sm:hidden" src={Image5} alt="..." />
+        </div>
       </Carousel>
-      <Carousel className="px-10 mb-10">
+      <Carousel slideInterval={5000} className="px-10 mb-10">
         <div className="grid grid-cols-2 sm:grid-cols-5 md:flex-row gap-7 sm:gap-16  md:gap-10 justify-around px:10 lg:px-20 overscroll-hidden items-center ">
           <Image className="object-contain w-40" src={Image17} alt="..." />
           <Image className="object-contain w-40" src={Image18} alt="..." />
