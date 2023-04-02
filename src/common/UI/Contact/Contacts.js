@@ -28,7 +28,7 @@ const Contacts = () => {
         image={phone}
         title="PHONE"
         subtitle="FOR MOBILE FANS"
-        subtitle2="Call Us On: 87148 04425"
+        subtitle2="Call Us On: +91 87148 04425"
         button="GET CALL BACK"
       />
       <Contact
