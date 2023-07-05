@@ -34,7 +34,7 @@ const Gallery = () => {
         img={"/assets/images/resource/service/Product.jpg"}
         title="Product Designing"
         desc="We create mechanical design of various products from manufacture’s concept or ideas and prepare animations and product videos for presentations and review purposes."
-        desc2="We offer services inprototype manufacturing and 3D printing. covers ship resistance & propulsion, mooring analysis, pipe flow simulations and multi-body interaction analysis."
+        desc2="We offer services in prototype manufacturing and 3D printing. covers ship resistance & propulsion, mooring analysis, pipe flow simulations and multi-body interaction analysis."
       />
       <Card
         img={"/assets/images/resource/service/Prototype.jpg"}

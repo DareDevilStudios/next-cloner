@@ -11,11 +11,11 @@ const Vision = () => {
           <p class="text-justify mb-6 font-sm lg:mb-8 text-gray-500 ">
             The vision of ShipTech-ICON is to be a leading workforce in the
             industry to bring about change to the Indian Ship/Boat building
-            industry with their creative, innovative and optimised designs. The
+            industry with their creative, innovative and optimized designs. The
             view of ShipTech-ICON design is to be bringing about change in the
             way marine and inland vessels are being built in this part of the
             world, to reduce the amount of wastage in the production facilities
-            and thereby bring about optimised CAPEX gains to the owner.
+            and thereby bring about optimized CAPEX gains to the owner.
           </p>
         </div>
         <div className="md:w-1/2 flex flex-col items-center justify-center w-full h-full px-5 md:px-20">

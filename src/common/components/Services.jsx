@@ -17,7 +17,7 @@ const Sevices = () => {
           </h2>
           <p class="font-normal text-gray-900 text-md dark:text-gray-350 w-4/6">
             We offer designs for ships, boats and Offshore sector. This includes
-            Basic design to CFD/FE Analysis. We provide 3D visualisation as well
+            Basic design to CFD/FE Analysis. We provide 3D visualization as well
             as production engineering and supply boat building kits. Through our
             partners we have started doing fabrication also.
           </p>
