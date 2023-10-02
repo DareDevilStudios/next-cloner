@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Img1 from "../../../../../public/assets/images/achievements_modi.jpg"
-import Img2 from "../../../../../public/assets/images/news_modi.jpg"
 
 const Acheivements = () => {
   return (
@@ -19,8 +17,8 @@ const Acheivements = () => {
               <span className="font-normal">OUR RECENT</span> ACHIEVEMENTS
             </h2>
             <div className={"flex gap-8 mt-7 w-full justify-center"}>
-              <Image className={"w-2/4"} src={Img1} width={300} height={300} alt={"modi prize win"}/>
-              <Image className={"w-1/4"} src={Img2} width={300} height={300} alt={"modi prize win"}/>
+              <Image className={"w-2/4"} src={"/assets/images/achievements_modi.jpg"} width={300} height={300} alt={"modi prize win"}/>
+              <Image className={"w-1/4"} src={"/assets/images/news_modi.jpg"} width={300} height={300} alt={"modi prize win"}/>
             </div>
           </div>
         </motion.div>
