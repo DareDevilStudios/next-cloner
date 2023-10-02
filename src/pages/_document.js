@@ -20,7 +20,6 @@ class AppDocument extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <title>ShipTech - Icon</title>
         </Head>
         <body className="bg-p_back">
           <Main />

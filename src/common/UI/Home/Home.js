@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar";
 import AboutUsHome from "../../components/AboutUsHome";
-import Footer from "../../components/Footer";
 import Services from "../../components/Services";
 import Mtop from "../../components/Mtop";
-// import Carousal from "./components/Carousal";
 import Achieve from "./Components/Achieve";
 import Projects from "./Components/Projects";
 import Testimonials from "./Components/Testimonials";
-import Clients from "./Components/Clients";
 import Carousal3 from "./Components/Carousal3";
-import ClientsAuto from "./Components/ClientsAuto";
 import Test2 from "./Components/Test2";
 import { motion } from "framer-motion";
+import Acheivements from "./Components/acheivements";
 
 const Home = () => {
 
@@ -51,6 +48,7 @@ const Home = () => {
 
       </div>
       <AboutUsHome />
+      <Acheivements/>
       <Services />
       <Achieve />
       <Projects />

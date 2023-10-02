@@ -5,7 +5,7 @@ import React from "react";
 
 const Sevices = () => {
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white">
       <motion.div
         initial={{ y: 100 , opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -58,7 +58,7 @@ const Sevices = () => {
 
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                Product Design & <br /> Prototype <br /> Manufacturing
+                Product Designing
               </h5>
             </div>
             {/* overlay */}
@@ -69,6 +69,18 @@ const Sevices = () => {
             <div className="items-center justify-center w-full absolute bottom-10 ">
               <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
                 Marine Services
+              </h5>
+            </div>
+            {/* overlay */}
+            <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
+          </Link>
+
+          {/* new modelling */}
+          <Link href="/services/prototype-manufacturing" className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Prototype2.jpeg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500">
+
+            <div className="items-center justify-center w-full absolute bottom-10 ">
+              <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
+                Prototype Manufacturing
               </h5>
             </div>
             {/* overlay */}
