@@ -1,98 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Image from "next/image";
 
 const Acheivements = () => {
   return (
     <div>
-      <section class="bg-white">
+      <section className="bg-white">
         <motion.div
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ type: "bounce", stiffness: 100 }}
           class=" py-8 px-4 w-full lg:py-16 lg:px-6 text-center"
         >
-          <div class="w-full text-center mb-8 lg:mb-16 flex flex-col justify-center items-center">
-            <h2 class="mb-4 text-3xl md:text-5xl tracking-tight font-body font-semibold text-gray-900 dark:text-white">
-              <span className="font-normal">OUR</span> ACHIEVEMENT
+          <div className="w-full text-center mb-8 lg:mb-16 flex flex-col justify-center items-center">
+            <h2 className="mb-4 text-3xl md:text-5xl tracking-tight font-body font-semibold text-gray-900 dark:text-white">
+              <span className="font-normal">OUR RECENT</span> ACHIEVEMENTS
             </h2>
-          </div>
-          <div class="flex md:flex-row flex-col gap-5 w-full lg:mb-16 justify-center items-center mx-auto">
-            <Link
-              href="/services"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/naval.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Naval <br /> Architectural <br /> Services
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
-
-            <Link
-              href="/services"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Structural.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Structural <br /> Engineering <br /> Services
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
-            <Link
-              href="/services"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Hydrodynamics.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Hydrodynamics
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
-            <Link
-              href="/services"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Product.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Product Designing
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
-            <Link
-              href="/services"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Marine.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Marine Services
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
-
-            {/* new modelling */}
-            <Link
-              href="/services/prototype-manufacturing"
-              className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Prototype2.jpeg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
-            >
-              <div className="items-center justify-center w-full absolute bottom-10 ">
-                <h5 className="text-2xl text-center lg:text-xl xl:text-2xl font-bold text-white">
-                  Prototype Manufacturing
-                </h5>
-              </div>
-              {/* overlay */}
-              <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
-            </Link>
+            <div className={"flex gap-8 mt-7 w-full justify-center"}>
+              <Image className={"w-2/4"} src={"/assets/images/achievements_modi.jpg"} width={300} height={300} alt={"modi prize win"}/>
+              <Image className={"w-1/4"} src={"/assets/images/news_modi.jpg"} width={300} height={300} alt={"modi prize win"}/>
+            </div>
           </div>
         </motion.div>
       </section>

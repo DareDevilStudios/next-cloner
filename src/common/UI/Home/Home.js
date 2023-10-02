@@ -9,24 +9,9 @@ import Testimonials from "./Components/Testimonials";
 import Carousal3 from "./Components/Carousal3";
 import Test2 from "./Components/Test2";
 import { motion } from "framer-motion";
-import Acheivements from "./Components/acheivements";
+import Acheivements from "./Components/Acheivements";
 
 const Home = () => {
-
-  const cardVariants = {
-    offscreen: {
-      y: 300
-    },
-    onscreen: {
-      y: 50,
-      rotate: -10,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 0.8
-      }
-    }
-  }
 
   return (
     <div className="relative w-full">
