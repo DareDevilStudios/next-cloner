@@ -38,9 +38,9 @@ const Gallery = () => {
       />
       <Card
         img={"/assets/images/resource/service/Prototype2.jpeg"}
-        title="Prototype Manufacturing"
-        desc="We create mechanical design of various products from manufacture’s concept or ideas and prepare animations and product videos for presentations and review purposes."
-        desc2="We offer services in prototype manufacturing and 3D printing."
+        title="Marine Scaled Model Making"
+        desc="We also specialise in Product design and prototyping Services with a core focus on Marine Scale Models. We use multiple technologies like 3D printing (SLA & FDM), Laser Cutting, etc., to achieve desired results.."
+        desc2="With our expertise and collaborators, we are trying to bring the domain of Scale Model Making into the 21st Century by using cutting edge technologies. We aim to capture the glory and precision of the craft in the scaled model."
       />
       <Card
         img={"/assets/images/resource/service/Marine.jpg"}
