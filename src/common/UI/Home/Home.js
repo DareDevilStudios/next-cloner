@@ -9,7 +9,7 @@ import Testimonials from "./Components/Testimonials";
 import Carousal3 from "./Components/Carousal3";
 import Test2 from "./Components/Test2";
 import { motion } from "framer-motion";
-import Acheivements from "./Components/Acheivements";
+import Acheivements from "./Components/Acheivements.jsx";
 
 const Home = () => {
 
