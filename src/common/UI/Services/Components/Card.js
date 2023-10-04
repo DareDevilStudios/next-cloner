@@ -12,7 +12,7 @@ const Card = ({ title, desc, img , desc2 }) => {
     }
   };
 
-  const href = title === "Prototype Manufacturing" ? `/services/${title.toLowerCase().replace(/ /g, '-')}` : "/services";
+  const href = title === "Scaled Marine Model Making" ? `/services/${title.toLowerCase().replace(/ /g, '-')}` : "/services";
 
   return (
     <div className="flex-start   max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 min-h-[30rem] max-h">

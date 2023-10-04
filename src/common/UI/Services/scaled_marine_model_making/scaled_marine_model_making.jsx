@@ -101,7 +101,24 @@ const scaled_marine_model_making = () => {
         </div>
         <div class="flex flex-col items-center justify-center w-full h-full">
           <h1 class="font-body w-full mb-5 text-2xl font-bold tracking-wide leading-1 text-blue-700">
-            1. D'Leap
+            1. Water Metro Model
+          </h1>
+          <div className="flex flex-wrap justify-center gap-3">
+            {WaterModel.map((item) => (
+              <Image
+                className="w-64"
+                width={300}
+                height={300}
+                src={item}
+                alt="About"
+              />
+            ))}
+          </div>
+        </div>
+        <div className="px-8 border-2 border-gray-100 my-12"></div>
+        <div class="flex flex-col items-center justify-center w-full h-full">
+          <h1 class="font-body w-full mb-5 text-2xl font-bold tracking-wide leading-1 text-blue-700">
+            2. D'Leap
           </h1>
           <p class="self-start text-justify font-sm text-gray-500 mb-6">
             D’Leap is a 24m luxury catamaran yatch designed for a prospect
@@ -124,7 +141,7 @@ const scaled_marine_model_making = () => {
         <div className="px-8 border-2 border-gray-100 my-12"></div>
         <div class="flex flex-col items-center justify-center w-full h-full">
           <h1 class="font-body w-full mb-5 text-2xl font-bold tracking-wide leading-1 text-blue-700">
-            2. RAY
+            3. PRIME
           </h1>
           <p class="self-start text-justify font-sm text-gray-500 mb-6">
             A 12m Electric Luxury Yatch
@@ -146,7 +163,7 @@ const scaled_marine_model_making = () => {
         <div className="px-8 border-2 border-gray-100 my-12"></div>
         <div class="flex flex-col items-center justify-center w-full h-full">
           <h1 class="font-body w-full mb-5 text-2xl font-bold tracking-wide leading-1 text-blue-700">
-            3. ASDV
+            4. ASDV
           </h1>
           {/* 
           ;	Model Scale 1:30 */}
@@ -157,23 +174,6 @@ const scaled_marine_model_making = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {ASDV.map((item) => (
-              <Image
-                className="w-64"
-                width={300}
-                height={300}
-                src={item}
-                alt="About"
-              />
-            ))}
-          </div>
-        </div>
-        <div className="px-8 border-2 border-gray-100 my-12"></div>
-        <div class="flex flex-col items-center justify-center w-full h-full">
-          <h1 class="font-body w-full mb-5 text-2xl font-bold tracking-wide leading-1 text-blue-700">
-            4. Water Metro Model
-          </h1>
-          <div className="flex flex-wrap justify-center gap-3">
-            {WaterModel.map((item) => (
               <Image
                 className="w-64"
                 width={300}
