@@ -46,7 +46,7 @@ const scaled_marine_model_making = () => {
       <Navbar />
       <Mtop />
       <Banner_services title="Marine Scaled Model Making" />
-      <div class="flex md:flex-row flex-col items-center justify-center w-full h-full">
+      {/* <div class="flex md:flex-row flex-col items-center justify-center w-full h-full">
         <div class="w-full p-7 md:p-12 flex md:flex-row flex-col justify-center items-center gap-12">
           <p class="text-justify w-1/2 font-sm text-gray-500 ">
             We also specialise in Product design and prototyping Services with a
@@ -59,11 +59,11 @@ const scaled_marine_model_making = () => {
           </p>
           <Image className="w-80" src={Prototype2} alt="About" />
         </div>
-      </div>
+      </div> */}
       <div className="p-12">
-        <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
+        {/* <h1 class="font-body w-11/12 mb-5 text-4xl font-bold tracking-wide leading-1 text-blue-700">
           Model Making Portfolio
-        </h1>
+        </h1> */}
         <div class="w-full p-7 md:p-12 flex md:flex-row flex-col justify-between items-center gap-12">
           <p class="text-justify md:w-1/2 font-sm text-gray-500 ">
             Over past few years ShipTech-ICON has been servicing different areas
