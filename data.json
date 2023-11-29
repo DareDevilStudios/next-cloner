@@ -47,7 +47,54 @@
           "/assets/images/resource/service/submarine/6.jpeg"
         ]
       }
+    ],
+    [
+      {
+        "title": "Water Metro Model",
+        "description": "Over the past few years, ShipTech-ICON has been servicing different areas of the marine industry with its needs for sales-support and marketing models of new products...",
+        "images": [
+          "/assets/images/resource/service/water model/1.jpg",
+          "/assets/images/resource/service/water model/2.jpg",
+          "/assets/images/resource/service/water model/3.jpg",
+          "/assets/images/resource/service/water model/4.jpg",
+          "/assets/images/resource/service/water model/5.jpg",
+          "/assets/images/resource/service/water model/6.jpg",
+          "/assets/images/resource/service/water model/7.jpg"
+        ]
+      },
+      {
+        "title": "D'Leap",
+        "description": "D’Leap is a 24m luxury catamaran yacht designed for a prospect client in the Middle East. A scaled model of this yacht was made to present the design to the client...",
+        "images": [
+          "/assets/images/resource/service/dleap/2.jpeg",
+          "/assets/images/resource/service/dleap/3.jpeg",
+          "/assets/images/resource/service/dleap/4.jpeg",
+          "/assets/images/resource/service/dleap/5.jpeg",
+          "/assets/images/resource/service/dleap/6.jpeg",
+          "/assets/images/resource/service/dleap/7.jpeg"
+        ]
+      },
+      {
+        "title": "PRIME",
+        "description": "A 12m Electric Luxury Yacht...",
+        "images": [
+          "/assets/images/resource/service/ray/1.jpeg",
+          "/assets/images/resource/service/ray/2.jpeg",
+          "/assets/images/resource/service/ray/3.jpeg",
+          "/assets/images/resource/service/ray/4.jpeg"
+        ]
+      },
+      {
+        "title": "ASDV",
+        "description": "An Advanced Submersible capable of deploying seal commandos...",
+        "images": [
+          "/assets/images/resource/service/submarine/2.jpeg",
+          "/assets/images/resource/service/submarine/3.jpeg",
+          "/assets/images/resource/service/submarine/4.jpeg",
+          "/assets/images/resource/service/submarine/5.jpeg",
+          "/assets/images/resource/service/submarine/6.jpeg"
+        ]
+      }
     ]
   ]
 }
-  
