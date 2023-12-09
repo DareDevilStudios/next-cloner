@@ -25,7 +25,7 @@ const Sevices = () => {
         </div>
         <div class="flex md:flex-row flex-col gap-5 w-full lg:mb-16 justify-center items-center mx-auto">
           <Link
-            href="/services"
+            href="/services/naval-architectural-services"
             className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/naval.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
           >
             <div className="items-center justify-center w-full absolute bottom-10 ">
@@ -38,7 +38,7 @@ const Sevices = () => {
           </Link>
 
           <Link
-            href="/services"
+            href="/services/structural-engineering-services"
             className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Structural.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
           >
             <div className="items-center justify-center w-full absolute bottom-10 ">
@@ -50,7 +50,7 @@ const Sevices = () => {
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
           </Link>
           <Link
-            href="/services"
+            href="/services/hydrodynamics"
             className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Hydrodynamics.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
           >
             <div className="items-center justify-center w-full absolute bottom-10 ">
@@ -62,7 +62,7 @@ const Sevices = () => {
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
           </Link>
           <Link
-            href="/services"
+            href="/services/product-designing"
             className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Product.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
           >
             <div className="items-center justify-center w-full absolute bottom-10 ">
@@ -74,7 +74,7 @@ const Sevices = () => {
             <div className="hidden group-hover:block rounded-2xl duration-700 absolute w-full z-10 bottom-0 left-0 right-0 h-full bg-black bg-opacity-30 "></div>
           </Link>
           <Link
-            href="/services"
+            href="/services/marine-services"
             className="w-[15rem] hover:w-[20rem] md:hover:w-[25rem] group justify-center items-center bg-[url('/assets/images/resource/service/Marine.jpg')] bg-cover bg-no-repeat  h-[16rem] md:h-[21rem] bg-center relative hover: duration-500"
           >
             <div className="items-center justify-center w-full absolute bottom-10 ">

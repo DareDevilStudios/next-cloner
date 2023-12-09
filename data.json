@@ -1,100 +1,64 @@
 {
   "services": [
-    [
-      {
-        "title": "Water Metro Model",
-        "description": "Over the past few years, ShipTech-ICON has been servicing different areas of the marine industry with its needs for sales-support and marketing models of new products...",
-        "images": [
-          "/assets/images/resource/service/water model/1.jpg",
-          "/assets/images/resource/service/water model/2.jpg",
-          "/assets/images/resource/service/water model/3.jpg",
-          "/assets/images/resource/service/water model/4.jpg",
-          "/assets/images/resource/service/water model/5.jpg",
-          "/assets/images/resource/service/water model/6.jpg",
-          "/assets/images/resource/service/water model/7.jpg"
-        ]
-      },
-      {
-        "title": "D'Leap",
-        "description": "D’Leap is a 24m luxury catamaran yacht designed for a prospect client in the Middle East. A scaled model of this yacht was made to present the design to the client...",
-        "images": [
-          "/assets/images/resource/service/dleap/2.jpeg",
-          "/assets/images/resource/service/dleap/3.jpeg",
-          "/assets/images/resource/service/dleap/4.jpeg",
-          "/assets/images/resource/service/dleap/5.jpeg",
-          "/assets/images/resource/service/dleap/6.jpeg",
-          "/assets/images/resource/service/dleap/7.jpeg"
-        ]
-      },
-      {
-        "title": "PRIME",
-        "description": "A 12m Electric Luxury Yacht...",
-        "images": [
-          "/assets/images/resource/service/ray/1.jpeg",
-          "/assets/images/resource/service/ray/2.jpeg",
-          "/assets/images/resource/service/ray/3.jpeg",
-          "/assets/images/resource/service/ray/4.jpeg"
-        ]
-      },
-      {
-        "title": "ASDV",
-        "description": "An Advanced Submersible capable of deploying seal commandos...",
-        "images": [
-          "/assets/images/resource/service/submarine/2.jpeg",
-          "/assets/images/resource/service/submarine/3.jpeg",
-          "/assets/images/resource/service/submarine/4.jpeg",
-          "/assets/images/resource/service/submarine/5.jpeg",
-          "/assets/images/resource/service/submarine/6.jpeg"
-        ]
-      }
-    ],
-    [
-      {
-        "title": "Water Metro Model",
-        "description": "Over the past few years, ShipTech-ICON has been servicing different areas of the marine industry with its needs for sales-support and marketing models of new products...",
-        "images": [
-          "/assets/images/resource/service/water model/1.jpg",
-          "/assets/images/resource/service/water model/2.jpg",
-          "/assets/images/resource/service/water model/3.jpg",
-          "/assets/images/resource/service/water model/4.jpg",
-          "/assets/images/resource/service/water model/5.jpg",
-          "/assets/images/resource/service/water model/6.jpg",
-          "/assets/images/resource/service/water model/7.jpg"
-        ]
-      },
-      {
-        "title": "D'Leap",
-        "description": "D’Leap is a 24m luxury catamaran yacht designed for a prospect client in the Middle East. A scaled model of this yacht was made to present the design to the client...",
-        "images": [
-          "/assets/images/resource/service/dleap/2.jpeg",
-          "/assets/images/resource/service/dleap/3.jpeg",
-          "/assets/images/resource/service/dleap/4.jpeg",
-          "/assets/images/resource/service/dleap/5.jpeg",
-          "/assets/images/resource/service/dleap/6.jpeg",
-          "/assets/images/resource/service/dleap/7.jpeg"
-        ]
-      },
-      {
-        "title": "PRIME",
-        "description": "A 12m Electric Luxury Yacht...",
-        "images": [
-          "/assets/images/resource/service/ray/1.jpeg",
-          "/assets/images/resource/service/ray/2.jpeg",
-          "/assets/images/resource/service/ray/3.jpeg",
-          "/assets/images/resource/service/ray/4.jpeg"
-        ]
-      },
-      {
-        "title": "ASDV",
-        "description": "An Advanced Submersible capable of deploying seal commandos...",
-        "images": [
-          "/assets/images/resource/service/submarine/2.jpeg",
-          "/assets/images/resource/service/submarine/3.jpeg",
-          "/assets/images/resource/service/submarine/4.jpeg",
-          "/assets/images/resource/service/submarine/5.jpeg",
-          "/assets/images/resource/service/submarine/6.jpeg"
-        ]
-      }
-    ]
+    {
+      "main_title": "Marine Scaled Model Making",   
+      "slug": "scaled-marine-model-making",
+      "content": "Over past few years ShipTech-ICON has been servicing different areas of marine industry with its needs for sales-support and marketing models of new products. We specialize in marine models working hard to achieve perfection with every project. With our craftsmanship and knowledge combined with the latest technology, our aim is to exceed our client’s expectations, meaning we deliver world class models to our clients. Our portfolio includes merchant ships, supply vessels, passenger ships, navy vessels, submarines, research vessels, leisure boats and small watercrafts. These bespoke and high-quality models have proved very successful in assisting our clients with the conversion of prospective sales into that of confirmed sales. We guarantee absolute confidentiality during any project we undertake. A model or prototype must be the single most important tool to get your product message across to those where 2-dimensions does not compute. A cheap, badly executed model will do your cause no favours. A good model will help you sell your idea, but a professionally manufactured and highly detailed model, tactile in every way, will complete the message that you are trying to convey and take your product, whatever it may be, one step closer to the production line. At ShipTech-ICON we offer a full model making service. With an eye for detail, budget and turnaround, we can produce exceptional industrial, conceptual and scale models quickly and cost effectively utilising a combination of modern CAD design and manipulation, through all forms of modern CNC technology, rapid prototyping, 3D printing, vacuum casting, finishing and trimming techniques. One of our prestigious project was to make the scaled model of Kochi Water Metro Catamaran Ferry for Kochi Metro Rail Ltd, Kerala. This scaled model was presented to the honourable Prime Minister of India, Shri. Narendra Modi by the honourable Chief Minister of Kerala, Shri. Pinarayi Vijayan.",
+      "main_image_url": "/assets/images/resource/service/water model/9.jpg",
+      "services_provided": [
+        {
+          "title": "Water Metro Model",
+          "images": [
+            "/assets/images/resource/service/water model/1.jpg",
+            "/assets/images/resource/service/water model/2.jpg",
+            "/assets/images/resource/service/water model/3.jpg",
+            "/assets/images/resource/service/water model/4.jpg",
+            "/assets/images/resource/service/water model/5.jpg",
+            "/assets/images/resource/service/water model/6.jpg",
+            "/assets/images/resource/service/water model/7.jpg"
+          ]
+        },
+        {
+          "title": "D'Leap",
+          "description": "D’Leap is a 24m luxury catamaran yacht designed for a prospect client in the Middle East. A scaled model of this yacht was made to present the design to the client...",
+          "subdescription": "Model Scale 1:32.",
+          "images": [
+            "/assets/images/resource/service/dleap/2.jpeg",
+            "/assets/images/resource/service/dleap/3.jpeg",
+            "/assets/images/resource/service/dleap/4.jpeg",
+            "/assets/images/resource/service/dleap/5.jpeg",
+            "/assets/images/resource/service/dleap/6.jpeg",
+            "/assets/images/resource/service/dleap/7.jpeg"
+          ]
+        },
+        {
+          "title": "PRIME",
+          "description": "A 12m Electric Luxury Yacht.",
+          "subdescription": "Model Scale 1:40.",
+          "images": [
+            "/assets/images/resource/service/ray/1.jpeg",
+            "/assets/images/resource/service/ray/2.jpeg",
+            "/assets/images/resource/service/ray/3.jpeg",
+            "/assets/images/resource/service/ray/4.jpeg"
+          ]
+        },
+        {
+          "title": "ASDV",
+          "description": "An Advanced Submersible capable of deploying seal commandos.",
+          "subdescription": "Model Scale 1:30.",
+          "images": [
+            "/assets/images/resource/service/submarine/2.jpeg",
+            "/assets/images/resource/service/submarine/3.jpeg",
+            "/assets/images/resource/service/submarine/4.jpeg",
+            "/assets/images/resource/service/submarine/5.jpeg",
+            "/assets/images/resource/service/submarine/6.jpeg"
+          ]
+        }
+      ]
+    },
+    {
+      "main_title": "Marine Services",
+      "slug": "marine-services"
+    }
   ]
 }
