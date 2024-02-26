@@ -21,19 +21,17 @@ const Home = () => {
       <Carousal3 />
       {/* <Carou4/> */}
       <div className="flex-col md:flex md:flex-row bg-shipblue text-shipy italic">
-
         <motion.div
-        initial={{ y: 100 }}
-        whileInView={{ y: 0 }}
-        transition={{ type: "tween", stiffness: 100 }}
-        className="w-full text-center py-7 font-display italic">
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ type: "tween", stiffness: 100 }}
+          className="w-full text-center py-7 font-display italic">
           <h1 className="text-3xl mb-6">Create  |   Enhance |   Sustain</h1>
           <h1 className="text-xl">Established In 2016</h1>
         </motion.div>
-
       </div>
       <AboutUsHome />
-      <Acheivements/>
+      <Acheivements />
       <Services />
       <Achieve />
       <Projects />

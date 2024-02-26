@@ -1,7 +1,7 @@
 {
   "services": [
     {
-      "main_title": "Marine Scaled Model Making",   
+      "main_title": "Marine Scaled Model Making",
       "slug": "scaled-marine-model-making",
       "content": "Over past few years ShipTech-ICON has been servicing different areas of marine industry with its needs for sales-support and marketing models of new products. We specialize in marine models working hard to achieve perfection with every project. With our craftsmanship and knowledge combined with the latest technology, our aim is to exceed our client’s expectations, meaning we deliver world class models to our clients. Our portfolio includes merchant ships, supply vessels, passenger ships, navy vessels, submarines, research vessels, leisure boats and small watercrafts. These bespoke and high-quality models have proved very successful in assisting our clients with the conversion of prospective sales into that of confirmed sales. We guarantee absolute confidentiality during any project we undertake. A model or prototype must be the single most important tool to get your product message across to those where 2-dimensions does not compute. A cheap, badly executed model will do your cause no favours. A good model will help you sell your idea, but a professionally manufactured and highly detailed model, tactile in every way, will complete the message that you are trying to convey and take your product, whatever it may be, one step closer to the production line. At ShipTech-ICON we offer a full model making service. With an eye for detail, budget and turnaround, we can produce exceptional industrial, conceptual and scale models quickly and cost effectively utilising a combination of modern CAD design and manipulation, through all forms of modern CNC technology, rapid prototyping, 3D printing, vacuum casting, finishing and trimming techniques. One of our prestigious project was to make the scaled model of Kochi Water Metro Catamaran Ferry for Kochi Metro Rail Ltd, Kerala. This scaled model was presented to the honourable Prime Minister of India, Shri. Narendra Modi by the honourable Chief Minister of Kerala, Shri. Pinarayi Vijayan.",
       "main_image_url": "/assets/images/resource/service/water model/9.jpg",
@@ -57,8 +57,177 @@
       ]
     },
     {
-      "main_title": "Marine Services",
-      "slug": "marine-services"
+      "main_title": "CFD ANALYSIS",
+      "slug": "cfd-analysis",
+      "content": "Computational Fluid Dynamics (CFD) analysis plays a crucial role in the marine industry, especially for companies involved in the design of ships and related maritime components. By leveraging advanced simulation techniques, these companies can assess and optimize the performance of their vessels in various fluid environments. CFD allows engineers to model and analyze the complex interactions between water and ship structures, predicting factors such as drag, lift, and overall hydrodynamic efficiency. This aids in the refinement of hull designs, propulsion systems, and other critical elements, ultimately enhancing the overall efficiency, safety, and environmental impact of the ships. Offering CFD analysis as a service, these companies provide a valuable solution for clients seeking to optimize vessel performance, reduce fuel consumption, and ensure compliance with regulatory standards.",
+      "main_image_url": "/assets/images/resource/service/CFD analysis/Picture30.jpg",
+      "services_provided": [
+        {
+          "title": "CFD Analysis of Pipe Flow.",
+          "description": "A computational fluid dynamics modeling (CFD) based on the Euler-Euler method was developed to investigate the particle distribution and settling inside the pipeline as a function of pipeline diameter, particle size, flow velocity, and inlet volume fraction of particles.",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture31.jpg"
+          ]
+        },
+        {
+          "title": "Analysis of Sail.",
+          "description": "Conducted the CFD Analysis of a sail for different angles to check whether in which angle will we get the maximum drag.",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture32.jpg"
+          ]
+        },
+        {
+          "title": "Exhaust Back Pressure Analysis using CFD.",
+          "description": "Exhaust back pressure was determined using CFD for various vessels exhaust systems. Pressure plots and velocity streamlines were obtained from the analysis.",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture33.jpg",
+            "/assets/images/resource/service/CFD analysis/Picture34.jpg"
+          ]
+        },
+        {
+          "title": "Propeller Open water characteristics determination using CFD",
+          "description": "CFD Analyses were performed at various rotational velocities of propeller. Thrust vs RPM curve was obtained from the simulations.          ",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture36.jpg",
+            "/assets/images/resource/service/CFD analysis/Picture37.jpg"
+          ]
+        },
+        {
+          "title": "Hull resistance calculation using CFD          ",
+          "description": "Bare Hull resistance was determined using CFD analysis. Wave pattern, velocity contours, etc were obtained from the simulations          ",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture38.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "main_title": "STRUCTURAL ANALYSIS",
+      "slug": "structural-analysis",
+      "content": "Structural analysis is a pivotal discipline in engineering, crucial for ensuring the integrity and performance of various structures across diverse industries. From buildings and bridges to aircraft and industrial machinery, structural analysis involves the application of mathematical models and engineering principles to assess the behavior of materials under different conditions. By subjecting structures to virtual simulations and stress tests, engineers can identify potential weaknesses, optimize designs, and ensure that the final product meets safety and performance standards. This process is instrumental in preventing structural failures, enhancing durability, and minimizing the environmental impact of construction projects. With advancements in technology, structural analysis has become more sophisticated, incorporating tools like Finite Element Analysis (FEA) to simulate complex interactions and predict structural responses accurately. As a result, companies providing structural analysis services contribute significantly to the development of robust, safe, and efficient structures across a wide range of applications.",
+      "main_image_url": "/assets/images/resource/service/structural analysis/Picture2.jpg",
+      "services_provided":[
+        {
+          "title": "Structural Design and FE Analysis of a Ramp.",
+          "description": "Designed a ramp which can withstand a load of 200T And analysed using simulation software.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture2.jpg"
+          ]
+        },
+        {
+          "title": "Design and Analysis of a Mezzanine Deck",
+          "description": "Designed the mezzanine Deck as per the client requirement and analysed the model using simulation software To check whether the deck can withstand a load of 2.5T.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture3.jpg"
+          ]
+        },
+        {
+          "title": "Analysis of a Barge",
+          "description": "Modelled and Analyzed the global and local strength of a corroded 90m Barge for various loading condition.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture4.jpg"
+          ]
+        },
+        {
+          "title": "Design and Analysis of Davit",
+          "description": "Modelled and Analyzed the global and local strength of a corroded 90m Barge for various loading condition.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture5.jpg"
+          ]
+        },
+        {
+          "title": "Design and Analysis of Pontoon",
+          "description": "Designed and analysed the pontoon to withstand the underwater pressure. Carried out the stability check.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture6.jpg"
+          ]
+        },
+        {
+          "title": "Analysis of Floating Dock",
+          "description": "Designed the mooring mechanism of a Floating dock at different drafts and Modification was made for the local strengthening.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture7.jpg",
+            "/assets/images/resource/service/structural analysis/Picture8.jpg"
+          ]
+        },
+        {
+          "title": "Analysis of a Process Tank",
+          "description": "Designed and analyzed the foundation of a Process Tank.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture10.png",
+            "/assets/images/resource/service/structural analysis/Picture11.jpg"
+          ]
+        },
+        {
+          "title": "Analysis of Mooring Buoy",
+          "description": "FE Analysis was done to design securing arrangement of onboard process tank. Stoppers and lashing arrangement was designed based on the analysis.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture12.jpg",
+            "/assets/images/resource/service/structural analysis/Picture13.jpg"
+          ]
+        },
+        {
+          "title": "Hybrid Platform Analysis",
+          "description": "Designed and analysed the hybrid  dredger platform to withstand the Pressure load.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture14.jpg"
+          ]
+        },
+        {
+          "title": "Modelling & Analysis of Engine",
+          "description": "Modelled the engine from the drawings and conducted different types of analysis like vibration, thermal etc.",
+          "images": [
+            "/assets/images/resource/service/structural analysis/Picture15.jpg",
+            "/assets/images/resource/service/structural analysis/Picture16.jpg",
+            "/assets/images/resource/service/structural analysis/Picture17.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "main_title": "DESIGNS",
+      "slug": "designs",
+      "content": "In the dynamic and competitive field of ship design, showcasing innovative and visually compelling designs is paramount for companies to distinguish themselves. Ship design firms not only focus on the functional aspects of naval architecture but also emphasize the aesthetic and ergonomic elements of their creations. These designs are often presented through detailed renderings, 3D models, and simulations that provide a vivid representation of the vessel's exterior and interior. The visual presentation serves not only as a marketing tool but also as a means of communicating the company's commitment to cutting-edge technology, efficiency, and environmental sustainability. Whether it's a sleek and modern passenger ship, a powerful and utilitarian cargo vessel, or a sophisticated naval platform, the design presentations capture the essence of the company's expertise and vision. Additionally, these visual representations are instrumental in engaging stakeholders, potential clients, and regulatory bodies, fostering confidence in the company's ability to deliver state-of-the-art and aesthetically pleasing maritime solutions.",
+      "main_image_url": "/assets/images/resource/service/designs/Picture18.jpg",
+      "services_provided": [
+        {
+          "title": "Design of Luxury Yacht D’LEAP",
+          "description": "D'LEAP is a classic example of quality designs from ShipTech-ICON which exhibits best performance of speed, aesthetics and luxury. D'LEAP is an electric yatch whch contribute to sustainability as well. The interior is designed with maximum comfort and utmost luxury to the passengers'.",
+          "images": [
+            "/assets/images/resource/service/designs/Picture18.jpg"
+          ]
+        },
+        {
+          "title": "Design of Luxury Yacht MANTA",
+          "description": "With a bold exterior concealing a spacious interior. This addition is sure to delight the adventurous with its incredible performance and se-keeping, fantastic handing and ability to reach speeds upto 38 knots.",
+          "images": [
+            "/assets/images/resource/service/designs/Picture18.jpg"
+          ]
+        },
+        {
+          "title": "Exhaust Back Pressure Analysis using CFD.",
+          "description": "Exhaust back pressure was determined using CFD for various vessels exhaust systems. Pressure plots and velocity streamlines were obtained from the analysis.",
+          "images": [
+            "/assets/images/resource/service/designs/Picture18.jpg",
+            "/assets/images/resource/service/CFD analysis/Picture34.jpg"
+          ]
+        },
+        {
+          "title": "Propeller Open water characteristics determination using CFD",
+          "description": "CFD Analyses were performed at various rotational velocities of propeller. Thrust vs RPM curve was obtained from the simulations.          ",
+          "images": [
+            "/assets/images/resource/service/designs/Picture18.jpg",
+            "/assets/images/resource/service/CFD analysis/Picture37.jpg"
+          ]
+        },
+        {
+          "title": "Hull resistance calculation using CFD          ",
+          "description": "Bare Hull resistance was determined using CFD analysis. Wave pattern, velocity contours, etc were obtained from the simulations          ",
+          "images": [
+            "/assets/images/resource/service/CFD analysis/Picture38.jpg"
+          ]
+        }
+      ]
     }
   ]
 }
