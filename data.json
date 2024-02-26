@@ -57,6 +57,173 @@
       ]
     },
     {
+      "main_title": "Marine Services",
+      "slug": "marine-services",
+      "services_provided": [        {
+        "title": "Analysis of Mooring Buoy",
+        "description": "FE Analysis was done to design securing arrangement of onboard process tank. Stoppers and lashing arrangement was designed based on the analysis.",
+        "images": [
+            "/assets/images/resource/service/Marine Services/Picture16.1.png",
+            "/assets/images/resource/service/Marine Services/Picture16.2.png",
+            "/assets/images/resource/service/Marine Services/FD1.jpg"
+          
+        ]
+      }
+    ]
+      
+      
+    },
+    {
+      "main_title": "Product Designing",
+      "slug": "product-designing",
+      "services_provided": [        {
+        "title": "Design and Analysis of Pontoon",
+        "description": "Designed and analysed the pontoon to withstand the underwater pressure. Carried out the stability check.",
+        "images": [
+            "/assets/images/resource/service/Product Design/Picture13.png"
+           ]
+      },
+      {
+        "title": "Modelling & Analysis of Engine",
+        "description": "Modelled the engine from the drawings and conducted different types of analysis like vibration, thermal etc.",
+        "images": [
+            "/assets/images/resource/service/Product Design/Picture18.1.png",
+            "/assets/images/resource/service/Product Design/Picture18.2.png",
+            "/assets/images/resource/service/Product Design/Picture18.3.png"
+           ]
+      },
+      {
+        "title": "Design of Automotives",
+        "description": "Designed an auto as per the client requirement which is different from the available design and it is a composite construction. Light in weight.",
+        "images": [
+            "/assets/images/resource/service/Product Design/Picture27.png"
+           
+           ]
+      },
+      {
+        "title": "Design and Consturction of a 50 Pax Vessel",
+        "description": "Designed and constructed a vessel which can carry 50 Pax",
+        "subdescription": " ",
+        "images": [
+            "/assets/images/resource/service/Product Design/Picture30.1.png",
+            "/assets/images/resource/service/Product Design/Picture30.2.png"
+            ]
+      }
+    ]
+
+      
+    },
+    {
+      "main_title": "Hydrodynamics",
+      "slug": "hydrodynamics",
+      "services_provided": [      
+          {
+        "title": "CFD Analysis of Pipe Flow.",
+        "description": "A computational fluid dynamics modelling (CFD) based on the Euler-Euler method was developed to investigate the particle distribution and settling inside the pipeline as a function as a function of pipeline diameter,particle size,flow velocity and inlet volume fraction of particles.",
+        "images": [
+            "/assets/images/resource/service/Hydrodynamics/Picture4.png"
+          
+           ]
+      },
+      {
+        "title": "Analysis of Sail",
+        "description": "Conducted the CFD Analysis of a sail for different angles to check whether in which angle will we get the maximum drag.",
+        "images": [
+            "/assets/images/resource/service/Hydrodynamics/Picture3.1.png",
+            "/assets/images/resource/service/Hydrodynamics/Picture3.2.png"
+           ]
+      },
+      {
+        "title": "Exhaust Back Pressure Analysis using CFD",
+        "description": "Exhaust back pressure was determined using CFD for various vessels exhaust systems. Pressure plots and velocity streamlines were obtained from the analysis.",
+        "images": [
+            "/assets/images/resource/service/Hydrodynamics/Picture5.1.png",
+            "/assets/images/resource/service/Hydrodynamics/Picture5.2.png"
+           ]
+      },
+      {
+        "title": "Propeller Open water characteristics determination using CFD",
+        "description": "CFD Analyses were performed at various rotational velocities of propeller. Thrust vs RPM curve was obtained from the simulations.",
+        "images": [
+            "/assets/images/resource/service/Hydrodynamics/Picture6.1.png",
+            "/assets/images/resource/service/Hydrodynamics/Picture6.2.png"
+           ]
+      },
+      {
+        "title": "Hull resistance calculation using CFD",
+        "description": "Bare Hull resistance was determined using CFD analysis. Wave pattern, velocity contours, etc were obtained from the simulations",
+        "images": [
+            "/assets/images/resource/service/Hydrodynamics/Picture7.png"
+           ]
+      }
+    ]
+      
+    },
+    {
+      "main_title": "Structural Engineering Services",
+      "slug": "structural-engineering-services",
+      "services_provided": [        {
+        "title": "Structural Design and FE Analysis of a Ramp.",
+        "description": "Designed a ramp which can withstand a load of 200T And analysed using simulation software.",
+        "images": [
+            "/assets/images/resource/service/Structural/Picture9.png"
+          ]
+      },
+      {
+        "title": "Design and Analysis of a Mezzanine Deck",
+        "description": "Designed the mezzanine Deck as per the client requirement and analysed the model using simulation software To check whether the deck can withstand a load of 2.5T.",
+        "images": [
+            "/assets/images/resource/service/Structural/Picture10.png"
+          ]
+      },
+      {
+        "title": "Analysis of a Barge",
+        "description": "Modelled and Analyzed the global and local strength of a corroded 90m Barge for various loading condition."
+        ,
+        "images": [
+            "/assets/images/resource/service/Structural/Picture11.png"
+          ]
+      },
+      {
+        "title": "Design and Analysis of Davit",
+        "description": "Design and analysed a diver support davit for a tug having a lifting capacity of 200Kg."
+        ,
+        "images": [
+            "/assets/images/resource/service/Structural/Picture12.png",
+            "/assets/images/resource/service/Structural/Plate Rack Def.jpg",
+            "/assets/images/resource/service/Structural/Plate Rack Stress.jpg"
+          ]
+      },
+      {
+        "title": "Analysis of Floating Dock",
+        "description": "Designed the mooring mechanism of a Floating dock at different drafts and Modification was made for the local strengthening.",
+        "images": [
+            "/assets/images/resource/service/Structural/Picture14.1.png",
+            "/assets/images/resource/service/Structural/Picture14.2.png",
+            "/assets/images/resource/service/Structural/Barge FE.jpg",
+            "/assets/images/resource/service/Structural/Barge Stress 1.jpg"
+          ]
+      },
+      {
+        "title": "Analysis of a Process Tank",
+        "description": "Designed and analyzed the foundation of a Process Tank.",
+        "images": [
+            "/assets/images/resource/service/Structural/Picture15.1.png",
+            "/assets/images/resource/service/Structural/Picture15.2.png"
+          ]
+      },
+      {
+        "title": "Hybrid Platform Analysis",
+        "description": "Designed and analysed the hybrid  dredger platform to withstand the Pressure load.",
+        "images": [
+            "/assets/images/resource/service/Structural/Picture17.png"
+          ]
+      }
+    ]
+  }
+]
+}
+  
       "main_title": "CFD ANALYSIS",
       "slug": "cfd-analysis",
       "content": "Computational Fluid Dynamics (CFD) analysis plays a crucial role in the marine industry, especially for companies involved in the design of ships and related maritime components. By leveraging advanced simulation techniques, these companies can assess and optimize the performance of their vessels in various fluid environments. CFD allows engineers to model and analyze the complex interactions between water and ship structures, predicting factors such as drag, lift, and overall hydrodynamic efficiency. This aids in the refinement of hull designs, propulsion systems, and other critical elements, ultimately enhancing the overall efficiency, safety, and environmental impact of the ships. Offering CFD analysis as a service, these companies provide a valuable solution for clients seeking to optimize vessel performance, reduce fuel consumption, and ensure compliance with regulatory standards.",
