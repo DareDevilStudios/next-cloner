@@ -12,7 +12,8 @@ const Card = ({ title, desc, img , desc2 }) => {
     }
   };
 
-  const href = title === "Scaled Marine Model Making" ? `/services/${title.toLowerCase().replace(/ /g, '-')}` : "/services";
+
+  const href = `/services/${title.toLowerCase().replace(/ /g, '-')}`
 
   return (
     <div className="flex-start   max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 min-h-[30rem] max-h">
@@ -26,7 +27,7 @@ const Card = ({ title, desc, img , desc2 }) => {
         />
       </Link>
       <div className="relative p-5">
-        <Link href="#">
+        <Link href={href}>
           <h5 className="w-5/6 font-display py-5 px-2 md:pt-5 md:pb-10 text-center  md:h-[5rem] lg:w-[14rem] xl:w-[20rem] md:w-[16rem] absolute -top-9 bg-gray-200 text-shipblue hover:text-shipy hover:bg-shipblue mb-2 text-md md:text-xl tracking-tight duration-500">
             {title}
           </h5>
