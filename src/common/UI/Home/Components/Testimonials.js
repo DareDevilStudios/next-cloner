@@ -29,7 +29,7 @@ const Testimonials = () => {
       designation: "Commander, Coast Guards, Kerala & Mahe",
 
       description:
-        "It is heartening to sea startups, the passion revealed in innovativeness and out of box thought of establishing the marine industry is well appreciated. Wishing a long way ahead in the unexplored oceans.",
+        "It is heartening to see startups, the passion revealed in innovativeness and out of box thought of establishing the marine industry is well appreciated. Wishing a long way ahead in the unexplored oceans.",
     },
   ];
 
